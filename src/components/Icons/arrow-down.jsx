@@ -10,7 +10,7 @@ export function ArrowDown({ width = 16, height = 16}) {
 			<path
 				d="M12 6L8 10L4 6"
 				stroke="#E6F5FF"
-				stroke-width="2"
+				strokeWidth="2"
 			/>
 		</svg>
 	);

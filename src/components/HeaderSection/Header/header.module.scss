@@ -18,6 +18,13 @@
 	width: 100%;
 }
 
+.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
 .btn_header {
 	background-color: var(--color-light-green);
 	color: var(--color-dark-green);

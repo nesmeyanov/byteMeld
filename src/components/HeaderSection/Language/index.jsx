@@ -4,7 +4,7 @@ import { LOCALS } from "../../../i18n/constants";
 import i18next from "i18next";
 import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { wrapperAnimation, languageAnimation } from "../../../utils/animation";
+import { wrapperAnimation, langAnimation } from "../../../utils/animation";
 
 export function Language() {
 	const [isShowDropdown, setIsShowDropdown] = useState(false);
@@ -16,7 +16,7 @@ export function Language() {
 	};
 
 	const languages = [
-		{ code: LOCALS.UK, name: "UK" },
+		{ code: LOCALS.UK, name: "UA" },
 		{ code: LOCALS.EN, name: "EN" },
 	];
 
@@ -26,10 +26,10 @@ export function Language() {
 				isShowDropdown &&
 				selectedRef.current &&
 				dropdownRef.current &&
-				!selectedRef.current.contains(event.target) && // Перевірка, чи клік відбувся не на підменю
-				!dropdownRef.current.contains(event.target) // Перевірка, чи клік відбувся не на пункт меню
+				!selectedRef.current.contains(event.target) && 
+				!dropdownRef.current.contains(event.target)
 			) {
-				setIsShowDropdown(false); // Закриття підменю
+				setIsShowDropdown(false);
 			}
 		};
 
@@ -41,7 +41,7 @@ export function Language() {
 	}, [isShowDropdown]);
 
 	return (
-		<div className={style.wrapper}>
+		<div className={`${style.wrapper} ${isShowDropdown && style.active}`}>
 			<div
 				className={style.selected}
 				onClick={toggleDropdown}
@@ -68,7 +68,7 @@ export function Language() {
 										key={lang.code}
 										className={style.dropdownItem}
 										onClick={() => i18next.changeLanguage(lang.code)}
-										{...languageAnimation(index)}
+										{...langAnimation(index)}
 									>
 										<span>{lang.name}</span>
 									</motion.span>
