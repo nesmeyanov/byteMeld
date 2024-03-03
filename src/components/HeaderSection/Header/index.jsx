@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { BreakPoint } from "../../../router";
 import {scrollUpPage} from "../../../utils/helpers"
 import { useTranslation } from "react-i18next";
+import { Menu } from "../Menu";
 
 export function Header() {
 const{t} = useTranslation()
@@ -20,6 +21,7 @@ const isMobil = useContext(BreakPoint)
 				>
 					<Logo />
 				</Link>
+				{!isMobil && <Menu />}
 				<div className={style.actions}>
 					{!isMobil && <button className={style.btn_header}>{t("header.btn")}</button>}
 				</div>
