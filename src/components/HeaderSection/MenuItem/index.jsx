@@ -1,13 +1,14 @@
 import style from "./menuItem.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export function MenuItem({title, anchor}) {
-	// console.log("title", title);
-
+	const location = useLocation();
+	
 	return (
 		<>
 			<li className={style.item}>
 				<Link
+					{...(location.pathname !== "/" && { to: "/" })}
 					data-id={anchor && anchor}
 					className={style.link}
 				>

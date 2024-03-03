@@ -4,9 +4,6 @@ import { MenuItem } from "../MenuItem";
 
 export function Menu() {
 	const { dataMenu } = useGetArrayObjects();
-	console.log(dataMenu);
-
-
 
 	return (
 		<nav className={style.nav}>
