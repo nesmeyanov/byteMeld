@@ -152,7 +152,17 @@ h6 {
 	font-weight: 400;
 }
 
-
+:root {
+	--color-white: #FFFFFF;
+	--color-title: #E6F5FF;
+	--color-tetx: #DBDCDD;
+	--color-label: #7E929F;
+	--color-light-green: #00FFA3;
+	--color-dark-green:#014A30;
+	--color-light-blue: #21A2FF;
+	--font--source-code: "Source Code Pro";
+	--font-inter: "Inter";
+}
 
 html,
 body {

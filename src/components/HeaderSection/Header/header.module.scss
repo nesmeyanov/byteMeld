@@ -1,0 +1,40 @@
+.header {
+	background:
+		linear-gradient(0deg, rgba(0, 20, 33, 0.99) 0%, rgba(0, 20, 33, 0.99) 100%),
+		url("../../../assets/images/bg/bg_noise.jpg"),
+		lightgray 50% / cover no-repeat;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	max-width: 1440px;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 80px;
+	width: 100%;
+}
+
+.btn_header {
+	background-color: var(--color-light-green);
+	color: var(--color-dark-green);
+	padding: 7px 28px;
+	border: 2px solid var(--color-light-green);
+	font-family: "Source Code Pro";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0.32px;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		background-color: transparent;
+		color: var(--color-light-green);
+		transition: all 0.3s ease-in-out;
+	}
+}
