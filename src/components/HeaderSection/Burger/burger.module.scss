@@ -55,25 +55,13 @@ button:focus {
 	transform: scaleX(1);
 }
 
-// .no-touchevents .burger_bar_2:hover {
-// 	transform: scaleX(1);
-// }
-
 .burger_bar_3 {
 	transform: translateY(12px);
 }
 
-// .burger {
-// 	padding: 15px 10px;
-// }
-
 .burger.active .burger-button {
 	transform: rotate(-180deg);
 }
-
-// #burger.active .burger_bar {
-// 	background-color: #fff;
-// }
 
 .burger.active .burger_bar_1 {
 	transform: rotate(45deg);
