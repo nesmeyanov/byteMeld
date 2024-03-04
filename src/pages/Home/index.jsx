@@ -1,7 +1,9 @@
+import { SectionIntro } from "../../components/SectionIntroduction/SectionIntro";
+
 export function Home() {
 	return (
 		<div id="main">
-			<div></div>
+			<SectionIntro />
 		</div>
 	)
 }
