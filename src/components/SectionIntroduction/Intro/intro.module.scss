@@ -1,0 +1,15 @@
+.wrapperIntro {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 80px;
+	width: 100%;
+}
+
+.box_one,
+.box_two {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}

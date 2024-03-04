@@ -12,10 +12,10 @@
 	max-width: 1440px;
 	padding: 140px 40px 40px 40px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	gap: 80px;
-	width: 100%;
+	// width: 100%;
 
 	@media (max-width: 560px) {
 	padding: 140px 10px 40px 10px;
