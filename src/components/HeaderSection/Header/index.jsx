@@ -65,6 +65,8 @@ export function Header() {
 						toggleBurgerMenu={toggleBurgerMenu}
 						isMobil={isMobil}
 						dataMenu={dataMenu}
+						location={location}
+						t={t}
 					/>
 				)}
 			</AnimatePresence>
