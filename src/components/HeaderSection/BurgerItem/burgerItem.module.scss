@@ -1,0 +1,31 @@
+.li_wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: calc(100% - 40px);
+
+	@media (max-width: 560px) {
+		width: 100vw;
+	}
+
+	&:not(:last-child) {
+		border-bottom: 1px solid var(--color-label);
+	}
+}
+
+.item_link {
+	font-family: var(--font-source-code);
+	color: var(--color-white);
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 44px;
+	padding: 25px 0 25px 20px;
+	flex: 1;
+}
+
+.item_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 20px;
+}

@@ -6,6 +6,7 @@
 	font-weight: 400;
 	line-height: 26px;
 	color: var(--color-title);
+	z-index: 50;
 
 	&.active {
 		background-color: var(--color-container);
