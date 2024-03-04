@@ -1,20 +1,19 @@
 import style from "./burger.module.scss";
 
-export function Burger() {
+export function Burger({ isOpenBurgerMenu, toggleBurgerMenu }) {
 	return (
 		<div
 			id="burger"
-			class=""
+			className={`${style.burger} ${isOpenBurgerMenu && style.active}`}
+			onClick={toggleBurgerMenu}
 		>
 			<button
 				type="button"
-				title="Menu"
 				className={style.burger_button}
 			>
-				<span class="burger_bar burger_bar_1"></span>
-				<span className={`${style.burger_bar}`}></span>
-				<span class="burger_bar burger_bar_2"></span>
-				<span class="burger_bar burger_bar_3"></span>
+				<span className={`${style.burger_bar} ${style.burger_bar_1}`}></span>
+				<span className={`${style.burger_bar} ${style.burger_bar_2}`}></span>
+				<span className={`${style.burger_bar} ${style.burger_bar_3}`}></span>
 			</button>
 		</div>
 	);
