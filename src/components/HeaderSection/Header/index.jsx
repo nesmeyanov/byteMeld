@@ -1,5 +1,5 @@
 import style from "./header.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Logo } from "../../Icons/logo";
 import { useContext } from "react";
 import { BreakPoint } from "../../../router";
@@ -11,6 +11,7 @@ import { Language } from "../Language";
 export function Header() {
 const{t} = useTranslation()
 const isMobil = useContext(BreakPoint)
+	const location = useLocation();
 
 	return (
 		<header className={style.header}>
@@ -22,10 +23,14 @@ const isMobil = useContext(BreakPoint)
 				>
 					<Logo />
 				</Link>
-				{!isMobil && <Menu />}
+				{!isMobil && <Menu location={location} />}
 				<div className={style.actions}>
 					<Language />
-					{!isMobil && <button className={style.btn_header}>{t("header.btn")}</button>}
+					{!isMobil && (
+						<Link className={style.btn_link} {...(location.pathname !== "/" && { to: "/" })}>
+							<button className={style.btn_header}>{t("header.btn")}</button>
+						</Link>
+					)}
 				</div>
 			</div>
 		</header>

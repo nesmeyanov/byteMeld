@@ -2,7 +2,7 @@ import style from "./menu.module.scss";
 import { useGetArrayObjects } from "../../../utils/hooks";
 import { MenuItem } from "../MenuItem";
 
-export function Menu() {
+export function Menu({ location }) {
 	const { dataMenu } = useGetArrayObjects();
 
 	return (
@@ -14,6 +14,7 @@ export function Menu() {
 						if (title) {
 							return (
 								<MenuItem
+									location={location}
 									key={title}
 									title={title}
 									anchor={anchor}

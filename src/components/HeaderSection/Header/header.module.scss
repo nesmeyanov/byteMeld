@@ -25,6 +25,12 @@
 	gap: 40px;
 }
 
+.btn_linl {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .btn_header {
 	background-color: var(--color-light-green);
 	color: var(--color-dark-green);
