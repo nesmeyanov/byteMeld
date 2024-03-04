@@ -1,10 +1,10 @@
 import style from "./burger.module.scss";
 
-export function Burger({ isOpenBurgerMenu, toggleBurgerMenu }) {
+export function Burger({ isOpenBurgerMenu, toggleBurgerMenu, isMobil }) {
 	return (
 		<div
 			id="burger"
-			className={`${style.burger} ${isOpenBurgerMenu && style.active}`}
+			className={`${style.burger} ${isMobil && isOpenBurgerMenu && style.active}`}
 			onClick={toggleBurgerMenu}
 		>
 			<button

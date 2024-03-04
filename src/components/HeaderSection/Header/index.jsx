@@ -8,6 +8,9 @@ import { useTranslation } from "react-i18next";
 import { Menu } from "../Menu";
 import { Language } from "../Language";
 import { Burger } from "../Burger";
+import { BurgerMenu } from "../BurgerMenu";
+import { useGetArrayObjects } from "../../../utils/hooks";
+import { AnimatePresence } from "framer-motion";
 
 export function Header() {
 	const { t } = useTranslation();
@@ -19,6 +22,8 @@ export function Header() {
 		setIsOpenBurgerMenu(!isOpenBurgerMenu);
 	}
 
+	const { dataMenu } = useGetArrayObjects();
+
 	return (
 		<header className={style.header}>
 			<div className={style.container}>
@@ -29,7 +34,12 @@ export function Header() {
 				>
 					<Logo />
 				</Link>
-				{!isMobil && <Menu location={location} />}
+				{!isMobil && (
+					<Menu
+						location={location}
+						dataMenu={dataMenu}
+					/>
+				)}
 				<div className={style.actions}>
 					<Language />
 					{!isMobil ? (
@@ -43,10 +53,21 @@ export function Header() {
 						<Burger
 							toggleBurgerMenu={toggleBurgerMenu}
 							isOpenBurgerMenu={isOpenBurgerMenu}
+							isMobil={isMobil}
 						/>
 					)}
 				</div>
 			</div>
+			<AnimatePresence>
+				{isMobil && isOpenBurgerMenu && (
+					<BurgerMenu
+						isOpenBurgerMenu={isOpenBurgerMenu}
+						toggleBurgerMenu={toggleBurgerMenu}
+						isMobil={isMobil}
+						dataMenu={dataMenu}
+					/>
+				)}
+			</AnimatePresence>
 		</header>
 	);
 }

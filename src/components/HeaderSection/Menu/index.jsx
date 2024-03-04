@@ -1,9 +1,7 @@
 import style from "./menu.module.scss";
-import { useGetArrayObjects } from "../../../utils/hooks";
 import { MenuItem } from "../MenuItem";
 
-export function Menu({ location }) {
-	const { dataMenu } = useGetArrayObjects();
+export function Menu({ location, dataMenu }) {
 
 	return (
 		<nav className={style.nav}>
