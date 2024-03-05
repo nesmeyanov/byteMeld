@@ -8,10 +8,8 @@ import { useTranslation } from "react-i18next";
 export function TypingText() {
 	const langUA = i18next.language === LOCALS.UK;
 
-	//Три нижні рядки потрібні для того щоб при зміні мови в Typed теж відбувалась зміна
 	const { t } = useTranslation();
-	const text = t("header.btn");
-	console.log(text);
+	const text = t("intro.text");
 
 	return (
 		<p className={style.wrapperTyping}>
@@ -21,7 +19,7 @@ export function TypingText() {
 					strings={[
 						"",
 						"",
-						"Ми розробляємо інноваційні рішення у веб-розробці",
+						text
 					]}
 					typeSpeed={120}
 				/>
@@ -32,7 +30,7 @@ export function TypingText() {
 					strings={[
 						"",
 						"",
-						"We develop innovative solutions in web development",
+						text
 					]}
 					typeSpeed={120}
 				/>

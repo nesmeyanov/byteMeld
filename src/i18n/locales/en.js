@@ -35,8 +35,6 @@ export const en = {
 
 	///*** SectionIntroduction ***/
 	intro: {
-		typing: {
-			text: "We develop innovative solutions in web development",
-		},
+		text: "We develop innovative solutions in web development",
 	},
 };
