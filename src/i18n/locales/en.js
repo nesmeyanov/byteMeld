@@ -32,4 +32,9 @@ export const en = {
 		},
 		btn: "Contact us",
 	},
+
+	///*** SectionIntroduction ***/
+	intro: {
+		text: "We develop innovative solutions in web development",
+	},
 };
