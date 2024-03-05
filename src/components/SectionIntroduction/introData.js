@@ -1,2 +1,35 @@
-export const byte = [1, 0, 0, 1, 0, 1, 1, 0];
-export const meld = ["b", "y", "t", "e", "m", "e", "l", "d"];
+export const bytemeld = [
+	{
+		char: 1,
+		word: "b",
+	},
+
+	{
+		char: 0,
+		word: "y",
+	},
+	{
+		char: 0,
+		word: "t",
+	},
+	{
+		char: 1,
+		word: "e",
+	},
+	{
+		char: 0,
+		word: "m",
+	},
+	{
+		char: 1,
+		word: "e",
+	},
+	{
+		char: 1,
+		word: "l",
+	},
+	{
+		char: 0,
+		word: "d",
+	},
+];

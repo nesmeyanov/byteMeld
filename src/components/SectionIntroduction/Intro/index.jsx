@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import style from "./intro.module.scss";
 import { IntroItem } from "../IntroItem";
-import { byte, meld } from "../introData";
+import { bytemeld } from "../introData";
 
 // export function Intro() {
 // 	return (
@@ -32,47 +32,44 @@ import { byte, meld } from "../introData";
 // 	);
 // }
 
-
+// index < 4 &&
+// index >= 4 && 
 
 export function Intro() {
-	const [displayedText, setDisplayedText] = useState(byte.join(""));
+	 const [isByte, SetIsByte] = useState(false);
 
-	useEffect(() => {
-		let currentIndex = 0;
-		const interval = setInterval(() => {
-			if (currentIndex >= byte.length) {
-				clearInterval(interval);
-				return;
-			}
-			const updatedText = displayedText.split("");
-			updatedText[currentIndex] = meld[currentIndex];
-			setDisplayedText(updatedText.join(""));
-			currentIndex++;
-		}, 100); 
+ useEffect(() => {
+		const timeout = setTimeout(() => {
+			SetIsByte(true);
+		}, 3000); // Затримка в 3 секунди
 
-		return () => clearInterval(interval);
-	}, [displayedText]);
+		return () => clearTimeout(timeout);
+ }, []);
 
 	return (
 		<div className={style.wrapperIntro}>
 			<ul className={style.box_one}>
-				{displayedText.split("").map(
-					(char, index) =>
+				{bytemeld.map(
+					({ char, word }, index) =>
 						index < 4 && (
 							<IntroItem
 								key={index}
-								item={char}
+								isByte={isByte}
+								word={word}
+								char={char}
 							/>
 						)
 				)}
 			</ul>
 			<ul className={style.box_two}>
-				{displayedText.split("").map(
-					(char, index) =>
+				{bytemeld.map(
+					({ char, word }, index) =>
 						index >= 4 && (
 							<IntroItem
 								key={index}
-								item={char}
+								isByte={isByte}
+								word={word}
+								char={char}
 							/>
 						)
 				)}

@@ -9,12 +9,15 @@
 		color: var(--color-title);
 		font-family: var(--font-source-code);
 		font-size: 242px;
+		// font-size: 256px;
 		font-weight: 400;
 		line-height: 242px;
+		// line-height: 256px;
 		text-transform: uppercase;
 		text-align: right;
 		padding: 10px 0;
 		font-variant-numeric: slashed-zero;
 		font-feature-settings: "case" on;
+		// letter-spacing: -8px;
 	}
 }
