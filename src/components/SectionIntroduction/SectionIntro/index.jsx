@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import style from "./sectionIntro.module.scss";
 import { Intro } from "../Intro";
+import { TypingText } from "../TypingText";
 
 export function SectionIntro() {
 	const [isByte, SetIsByte] = useState(false);
@@ -8,7 +9,7 @@ export function SectionIntro() {
 	useEffect(() => {
 		const timeout = setTimeout(() => {
 			SetIsByte(true);
-		}, 1000); // Затримка в 3 секунди
+		}, 1000);
 
 		return () => clearTimeout(timeout);
 	}, []);
@@ -17,6 +18,7 @@ export function SectionIntro() {
 		<section className={style.wrapperIntro}>
 			<div className={style.container}>
 				<Intro isByte={isByte} />
+				<TypingText/>
 			</div>
 		</section>
 	);

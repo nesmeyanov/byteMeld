@@ -1,0 +1,13 @@
+.typed-cursor {
+	color: transparent;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 28px;
+		border-bottom: 44px solid var(--color-text);
+	}
+}

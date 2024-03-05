@@ -153,13 +153,13 @@ h6 {
 }
 
 :root {
-	--color-white: #FFFFFF;
-	--color-title: #E6F5FF;
-	--color-tetx: #DBDCDD;
-	--color-label: #7E929F;
-	--color-light-green: #00FFA3;
-	--color-dark-green:#014A30;
-	--color-light-blue: #21A2FF;
+	--color-white: #ffffff;
+	--color-title: #e6f5ff;
+	--color-text: #dbdcdd;
+	--color-label: #7e929f;
+	--color-light-green: #00ffa3;
+	--color-dark-green: #014a30;
+	--color-light-blue: #21a2ff;
 	--color-container: #163346;
 	--font-source-code: "Source Code Pro";
 	--font-inter: "Inter";
@@ -172,13 +172,13 @@ body {
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	min-height: 100%;
 }
 
 #main {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 }
