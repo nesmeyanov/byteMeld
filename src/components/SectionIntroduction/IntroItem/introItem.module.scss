@@ -8,7 +8,7 @@
 	position: relative;
 	flex: 0 1 25%;
 	padding-bottom: 40%;
-	cursor:crosshair;
+	cursor: crosshair;
 
 	@media (max-width: 991px) {
 		padding-bottom: 26%;
@@ -17,7 +17,7 @@
 	@media (max-width: 475px) {
 		padding-bottom: 38%;
 	}
-	
+
 	span {
 		position: absolute;
 		top: 0;
@@ -51,23 +51,23 @@
 			font-size: 142px;
 		}
 
-			@media (max-width: 991px) {
+		@media (max-width: 991px) {
 			font-size: 200px;
 		}
 
-			@media (max-width: 768px) {
+		@media (max-width: 768px) {
 			font-size: 164px;
 		}
 
-			@media (max-width: 680px) {
+		@media (max-width: 680px) {
 			font-size: 136px;
 		}
 
-			@media (max-width: 560px) {
+		@media (max-width: 560px) {
 			font-size: 128px;
 		}
 
-			@media (max-width: 360px) {
+		@media (max-width: 360px) {
 			font-size: 100px;
 		}
 	}

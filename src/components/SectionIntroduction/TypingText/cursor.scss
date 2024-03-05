@@ -9,5 +9,10 @@
 		left: 0;
 		width: 28px;
 		border-bottom: 44px solid var(--color-text);
+
+		@media (max-width: 560px){
+			border-bottom: 36px solid var(--color-text);
+			width: 22px;
+		}
 	}
 }

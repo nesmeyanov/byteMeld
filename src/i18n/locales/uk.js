@@ -33,8 +33,8 @@ export const uk = {
 		btn: "Зв'яжіться з нами",
 	},
 
-	///*** SectionIntroduction ***/
-	intro: {
+	///*** SectionAboutUs ***/
+	about: {
 		typing: {
 			text: "Ми розробляємо інноваційні рішення у веб-розробці",
 		},
