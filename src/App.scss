@@ -161,6 +161,7 @@ h6 {
 	--color-dark-green: #014a30;
 	--color-light-blue: #21a2ff;
 	--color-container: #163346;
+	--color-primary-container: #001E32;
 	--font-source-code: "Source Code Pro";
 	--font-inter: "Inter";
 }
@@ -181,4 +182,8 @@ body {
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
+}
+
+.hidden {
+	overflow: hidden;
 }

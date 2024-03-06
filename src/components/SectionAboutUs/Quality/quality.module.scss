@@ -1,1 +1,42 @@
+.wrapper {
+	border: 0px solid var(--secondary, #21a2ff);
+	background:
+		linear-gradient(0deg, rgba(0, 20, 33, 0.99) 0%, rgba(0, 20, 33, 0.99) 100%),
+		url("../../../assets/images/bg/bg_noise.jpg"),
+		lightgray 50% / cover no-repeat;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex: 0 1 48%;
 
+	@media (max-width: 1200px) {
+		flex: 0 1 90%;
+	}
+
+	@media (max-width: 768px) {
+		flex: 0 1 100%;
+	}
+
+	@media (max-width: 560px) {
+		flex-direction: column;
+		align-items:flex-start
+	}
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: var(--color-primary-container);
+}
+
+.desc {
+	color: var(--color-text);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 144%;
+	flex: 1;
+}

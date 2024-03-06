@@ -1,7 +1,7 @@
 import style from "./header.module.scss";
 import { Link, useLocation } from "react-router-dom";
 import { Logo } from "../../Icons/logo";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { BreakPoint } from "../../../router";
 import { scrollUpPage } from "../../../utils/helpers";
 import { useTranslation } from "react-i18next";
@@ -23,6 +23,15 @@ export function Header() {
 	}
 
 	const { dataMenu } = useGetArrayObjects();
+
+	// відміна прокрутки при відкритому бургер меню
+	useEffect(() => {
+		if (isOpenBurgerMenu) {
+			document.body.classList.add("hidden");
+		} else {
+			document.body.classList.remove("hidden");
+		}
+	}, [isOpenBurgerMenu]);
 
 	return (
 		<header className={style.header}>
