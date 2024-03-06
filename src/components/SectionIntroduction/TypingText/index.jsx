@@ -1,5 +1,5 @@
 import style from "./typingText.module.scss";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 import "./cursor.scss";
 import { LOCALS } from "../../../i18n/constants";
 import i18next from "i18next";
@@ -14,7 +14,7 @@ export function TypingText() {
 	return (
 		<p className={style.wrapperTyping}>
 			{langUA && (
-				<Typed
+				<ReactTyped
 					startWhenVisible
 					strings={[
 						"",
@@ -25,7 +25,7 @@ export function TypingText() {
 				/>
 			)}
 			{!langUA && (
-				<Typed
+				<ReactTyped
 					startWhenVisible
 					strings={[
 						"",
