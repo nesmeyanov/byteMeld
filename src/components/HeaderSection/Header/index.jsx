@@ -37,7 +37,7 @@ export function Header() {
 		<header className={style.header}>
 			<div className={style.container}>
 				<Link
-					to="/"
+					{...(location.pathname !== "/" && { to: "/" })}
 					className={style.logo}
 					onClick={scrollUpPage}
 				>

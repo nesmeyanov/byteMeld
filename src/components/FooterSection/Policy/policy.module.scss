@@ -1,0 +1,25 @@
+.privacy_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	color: var(--color-white);
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+}
+
+.item_policy {
+	font-variant-numeric: slashed-zero;
+	font-family: var(--font-source-code);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+.item_use {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 144%;
+}

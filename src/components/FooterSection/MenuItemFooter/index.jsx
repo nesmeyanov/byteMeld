@@ -1,7 +1,18 @@
-import style from "./menuItemFooter.module.scss"
+import style from "./menuItemFooter.module.scss";
+import { Link } from "react-router-dom"; 
 
-export function MenuItemFooter() {
+export function MenuItemFooter({ title, anchor, location }) {
 	return (
-		<div></div>
-	)
+		<>
+			<li className={style.item}>
+				<Link
+					{...(location.pathname !== "/" && { to: "/" })}
+					data-id={anchor && anchor}
+					className={style.link}
+				>
+					{title}
+				</Link>
+			</li>
+		</>
+	);
 }
