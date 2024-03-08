@@ -56,6 +56,45 @@ export const en = {
 		},
 	},
 
+	//*** SectionServices ***/
+	services: {
+		title1: "Outsourcing",
+		title2: "Outstaf",
+		btn: "Start cooperation",
+		outsourcing: {
+			service1: {
+				title: "Turnkey landing page",
+				desc: "Landing page - a business card site to familiarize the client with you or your business so that there are no more questions and only a request for cooperation or your services",
+			},
+			service2: {
+				title: "Multipage turnkey website",
+				desc: "We understand that your company needs not just a web presence, but an effective tool for attracting customers, partners and developing business online",
+			},
+			service3: {
+				title: "CRM system",
+				desc: "We are pleased to introduce you to our service of creating a CRM system, a powerful tool designed to optimize your company's customer relationship management. Regardless of whether you've had experience with CRM before, our CRM system will help you effectively organize your customer service and improve customer experience.",
+			},
+			service4: {
+				title: "Mobile application",
+				desc: "The mobile application is designed to provide you and your clients with a convenient and accessible way to access our services and features wherever you or your clients are.",
+			},
+		},
+		outstaf: {
+			service1: {
+				title: "Frontend",
+				desc: "Frontend developers who can strengthen your team or if you need a lead who can lead your team in developing the visible part of the site or application.",
+			},
+			service2: {
+				title: "Backend",
+				desc: "Backend developers understand how to optimize server and request performance to make your client feel more comfortable on your website or application.",
+			},
+			service3: {
+				title: "Fullstack",
+				desc: "Fullstack developers combine the visible part of frontend developers' work and the invisible part of backend developers' work.",
+			},
+		},
+	},
+
 	//***Footer***//
 	footer: {
 		menu: {
