@@ -55,4 +55,39 @@ export const uk = {
 				"Наша команда завжди готова допомогти вам вирішити будь-які питання або проблеми та забезпечити найкращий сервіс підтримки.",
 		},
 	},
+
+	//***Footer***//
+	footer: {
+		menu: {
+			home: {
+				title: "Головна",
+			},
+			about: {
+				title: "Про нас",
+				anchor: "#about",
+			},
+			service: {
+				title: "Послуги",
+				anchor: "#service",
+			},
+			portfolio: {
+				title: "Портфоліо",
+				anchor: "#portfolio",
+			},
+			reviews: {
+				title: "Відгуки",
+				anchor: "#reviews",
+			},
+			blog: {
+				title: "Блог",
+				anchor: "#blog",
+			},
+			contacts: {
+				title: "Контакти",
+				anchor: "#contacts",
+			},
+		},
+		policy: "Політика конфіденційності",
+		use: "Умови користування",
+	},
 };

@@ -55,4 +55,39 @@ export const en = {
 				"Our team is always ready to help you solve any questions or problems and provide the best support service.",
 		},
 	},
+
+	//***Footer***//
+	footer: {
+		menu: {
+			home: {
+				title: "Home",
+			},
+			about: {
+				title: "About us",
+				anchor: "#about",
+			},
+			service: {
+				title: "Service",
+				anchor: "#service",
+			},
+			portfolio: {
+				title: "Portfolio",
+				anchor: "#portfolio",
+			},
+			reviews: {
+				title: "Reviews",
+				anchor: "#reviews",
+			},
+			blog: {
+				title: "Blog",
+				anchor: "#blog",
+			},
+			contacts: {
+				title: "Contacts",
+				anchor: "#contacts",
+			},
+		},
+		policy: "Privacy policy",
+		use: "Terms of use",
+	},
 };
