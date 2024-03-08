@@ -5,6 +5,7 @@ import { useNestedObjectTranslation } from "./useNestedObjectTranslation";
 export function useGetArrayObjects() {
 	const dataMenu = useNestedObjectTranslation(uk, "header", "menu");
 	const dataAbout = useNestedObjectTranslation(uk, "about", "quality");
+	const dataFooter = useNestedObjectTranslation(uk, "footer", "menu");
 
-	return { dataMenu, dataAbout };
+	return { dataMenu, dataAbout, dataFooter };
 }
