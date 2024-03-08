@@ -6,6 +6,12 @@ export function useGetArrayObjects() {
 	const dataMenu = useNestedObjectTranslation(uk, "header", "menu");
 	const dataAbout = useNestedObjectTranslation(uk, "about", "quality");
 	const dataFooter = useNestedObjectTranslation(uk, "footer", "menu");
+	const dataOutsourcing = useNestedObjectTranslation(
+		uk,
+		"services",
+		"outsourcing"
+	);
+	const dataOutstaf = useNestedObjectTranslation(uk, "services", "outstaf");
 
-	return { dataMenu, dataAbout, dataFooter };
+	return { dataMenu, dataAbout, dataFooter, dataOutsourcing, dataOutstaf };
 }
