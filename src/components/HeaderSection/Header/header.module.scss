@@ -33,7 +33,7 @@
 
 .actions {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	gap: 40px;
 
@@ -51,7 +51,10 @@
 .btn_header {
 	background-color: var(--color-light-green);
 	color: var(--color-dark-green);
-	padding: 7px 28px;
+	// padding: 7px 28px;
+	padding: 7px 0;
+	min-width: 230px;
+	text-align: center;
 	border: 2px solid var(--color-light-green);
 	font-family: "Source Code Pro";
 	font-size: 16px;
@@ -68,17 +71,19 @@
 
 	@media (max-width: 1280px) {
 		font-size: 14px;
-		padding: 6px 20px;
+		padding: 6px 0;
+		min-width: 200px;
 	}
 
 	@media (max-width: 1140px) {
 		font-size: 13px;
-		padding: 5px 16px;
+		padding: 5px 0;
 	}
 
 	@media (max-width: 1024px) {
 		font-size: 12px;
-		padding: 4px 12px;
+		padding: 4px 0;
+		min-width: 170px;
 	}
 
 	&:hover {
