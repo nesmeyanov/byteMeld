@@ -1,11 +1,14 @@
-import { useTranslation } from "react-i18next"
-import style from "./sectionServices.module.scss"
+import { useTranslation } from "react-i18next";
+import style from "./sectionServices.module.scss";
+import "./tabs.scss";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import {Outsourcing} from "../Outsourcing";
-import {Outstaf} from "../Outstaf";
+import { Outsourcing } from "../Outsourcing";
+import { Outstaf } from "../Outstaf";
+import { useGetArrayObjects } from "../../../utils/hooks";
 
 export function SectionServices() {
-	const {t} = useTranslation();
+	const { t } = useTranslation();
+	const { dataOutsourcing, dataOutstaf } = useGetArrayObjects();
 
 	return (
 		<section
@@ -15,18 +18,14 @@ export function SectionServices() {
 			<div className={style.container}>
 				<Tabs className={style.box_service}>
 					<TabList className={style.service_tabs}>
-						<Tab className={style.service_item}>
-							{t("services.title1")}
-						</Tab>
-						<Tab className={style.service_item}>
-							{t("services.title2")}
-						</Tab>
+						<Tab className={style.service_item}>{t("services.title1")}</Tab>
+						<Tab className={style.service_item}>{t("services.title2")}</Tab>
 					</TabList>
 					<TabPanel>
-						<Outsourcing/>
+						<Outsourcing data={dataOutsourcing} />
 					</TabPanel>
 					<TabPanel>
-						<Outstaf/>
+						<Outstaf data={dataOutstaf} />
 					</TabPanel>
 				</Tabs>
 			</div>

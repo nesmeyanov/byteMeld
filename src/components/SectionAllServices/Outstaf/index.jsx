@@ -1,5 +1,24 @@
 import style from "./outstaf.module.scss";
+import { ServiceItem } from "../ServiceItem";
 
-export function Outstaf() {
-	return <div></div>;
+export function Outstaf({data}) {
+		return (
+			<div className={style.wrapper}>
+				{data.map((menu) =>
+					Object.keys(menu).map((key) => {
+						const { title, desc } = menu[key];
+						if (title) {
+							return (
+								<ServiceItem
+									key={title}
+									title={title}
+									desc={desc}
+								/>
+							);
+						}
+						return null;
+					})
+				)}
+			</div>
+		);
 }

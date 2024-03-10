@@ -1,0 +1,74 @@
+.service_body {
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	border-bottom: 1px solid var(--color-label);
+}
+
+.service_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding-right: 40px;
+	width: 100%;
+}
+
+.title {
+	color: var(--color-white);
+	font-family: var(--font-source-code);
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 137%;
+	flex: 1;
+}
+
+.btn {
+	color: var(--color-white);
+	text-align: center;
+	font-family: var(--font-inter);
+	font-size: 48px;
+	font-weight: 200;
+	line-height: 87%;
+	min-width: 32px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.desc {
+	color: var(--color-text);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 144%;
+	max-width: 660px;
+}
+
+.cooperation_btn {
+	border: 2px solid var(--color-light-green);
+	padding: 7px 30px;
+	color: var(--color-light-green);
+	font-family: var(--font-source-code);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 187%;
+	letter-spacing: 0.32px;
+	text-transform: uppercase;
+	cursor: pointer;
+	align-self: flex-end;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-color: var(--color-light-green);
+		color: var(--color-dark-green);
+		transition: all 0.3s ease-in-out;
+	}
+}
