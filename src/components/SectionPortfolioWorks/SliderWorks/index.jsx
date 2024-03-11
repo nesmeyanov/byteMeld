@@ -1,4 +1,5 @@
 import style from "./sliderWorks.module.scss"
+import "./swiper.scss"
 import { Work } from "../Work";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -19,7 +20,11 @@ export function SliderWorks({ isMobil, data }) {
 				slidesPerView={isMobil ? 1 : 2}
 				spaceBetween={40}
 				speed={500}
-				pagination={{ clickable: true, type: "bullets" }}
+				pagination={{
+					clickable: true,
+					type: "bullets",
+					el: `.${style.pagination}`,
+				}}
 				navigation={{
 					prevEl: `.${style.prevBtn}`,
 					nextEl: `.${style.nextBtn}`,
@@ -34,16 +39,17 @@ export function SliderWorks({ isMobil, data }) {
 					className={style.btn_container}
 				>
 					<div
-					// className="swiper-button-prev"
+						// className="swiper-button-prev"
 						className={style.prevBtn}
 					>
-						<ArrowRight />
+						<ArrowRight stroke="white"/>
 					</div>
+					<div className={style.pagination}></div>
 					<div
 						// className="swiper-button-next"
 						className={style.nextBtn}
 					>
-						<ArrowRight />
+						<ArrowRight stroke="white"/>
 					</div>
 				</div>
 				{data.map((item, index) => (

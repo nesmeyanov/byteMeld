@@ -16,7 +16,7 @@ export function Work({ site, img }) {
 				/>
 			</a>
 			<h3 className={style.title}>{site.title}</h3>
-			<div className={style.actions}>
+			<div className={style.info_box}>
 				<p className={style.desc}>{site.desc}</p>
 				<a
 					href={site.url}
