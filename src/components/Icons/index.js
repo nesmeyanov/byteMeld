@@ -6,4 +6,5 @@ export { CloseTag } from "./close-tag.jsx";
 export { Cpu } from "./cpu.jsx";
 export { Check } from "./check.jsx";
 export { Target } from "./target.jsx";
-export {Chat} from "./chat.jsx"
+export { Chat } from "./chat.jsx";
+export { ArrowGreen } from "./arrow-green.jsx";
