@@ -95,6 +95,38 @@ export const uk = {
 		},
 	},
 
+	//*** SectionPortfolio ***/
+	portfolio: {
+		title: "Портфоліо",
+		finished: {
+			site1: {
+				title: "Metra Group",
+				desc: "Cтворення дизайну, створення сайту, анімацій. Повний цикл веб розробки для виробника зерноочисників.",
+				url: "https://metragraincleaner.com",
+			},
+			site2: {
+				title: "Gunt company",
+				desc: "Наша команда виконала повний цикл веб-розробки.",
+				url: "https://gunt.company",
+			},
+			site3: {
+				title: "Office & House",
+				desc: "Наша команда виконала повний цикл веб-розробки.",
+				url: "https://officeandhousecleaningservices.com",
+			},
+			site4: {
+				title: "LEHRMANN",
+				desc: "Створення дизайну для данного сайту.",
+				url: "https://www.lehrmanngmbh.de",
+			},
+			site5: {
+				title: "NIKOLAB",
+				desc: "Повний цикл створення сайту.",
+				url: "https://nikolab.de",
+			},
+		},
+	},
+
 	//***Footer***//
 	footer: {
 		menu: {

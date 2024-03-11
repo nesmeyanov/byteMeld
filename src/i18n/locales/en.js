@@ -95,6 +95,38 @@ export const en = {
 		},
 	},
 
+	//*** SectionPortfolio ***/
+	portfolio: {
+		title: "Portfolio",
+		finished: {
+			site1: {
+				title: "Metra Group",
+				desc: "Design, website development, animations. A full cycle of web development for a grain cleaner manufacturer.",
+				url: "https://metragraincleaner.com",
+			},
+			site2: {
+				title: "Gunt company",
+				desc: "Design, website development, animations. A full cycle of web development for a grain cleaner manufacturer.",
+				url: "https://gunt.company",
+			},
+			site3: {
+				title: "Office & House",
+				desc: "Design, website development, animations. A full cycle of web development.",
+				url: "https://officeandhousecleaningservices.com",
+			},
+			site4: {
+				title: "LEHRMANN",
+				desc: "Creating a design for this site.",
+				url: "https://www.lehrmanngmbh.de",
+			},
+			site5: {
+				title: "NIKOLAB",
+				desc: "A full cycle of web development.",
+				url: "https://nikolab.de",
+			},
+		},
+	},
+
 	//***Footer***//
 	footer: {
 		menu: {
