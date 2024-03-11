@@ -12,6 +12,14 @@ export function useGetArrayObjects() {
 		"outsourcing"
 	);
 	const dataOutstaf = useNestedObjectTranslation(uk, "services", "outstaf");
+	const dataPortfolio = useNestedObjectTranslation(uk, "portfolio", "finished");
 
-	return { dataMenu, dataAbout, dataFooter, dataOutsourcing, dataOutstaf };
+	return {
+		dataMenu,
+		dataAbout,
+		dataFooter,
+		dataOutsourcing,
+		dataOutstaf,
+		dataPortfolio,
+	};
 }
