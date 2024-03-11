@@ -1,24 +1,26 @@
-import style from "./outsourcing.module.scss"
-import { ServiceItem } from "../ServiceItem"
+import { ServiceItem } from "../ServiceItem";
 
-export function Outsourcing({data}) {
+export function Outsourcing({ data, expanded, setExpanded }) {
 	return (
-		<div className={style.wrapper}>
-			{data.map((menu) =>
+		<>
+			{data.map((menu, index) =>
 				Object.keys(menu).map((key) => {
 					const { title, desc } = menu[key];
 					if (title) {
 						return (
 							<ServiceItem
 								key={title}
+								index={index}
 								title={title}
 								desc={desc}
+								expanded={expanded}
+								setExpanded={setExpanded}
 							/>
 						);
 					}
 					return null;
 				})
 			)}
-		</div>
+		</>
 	);
 }

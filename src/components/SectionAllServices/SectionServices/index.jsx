@@ -5,10 +5,12 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Outsourcing } from "../Outsourcing";
 import { Outstaf } from "../Outstaf";
 import { useGetArrayObjects } from "../../../utils/hooks";
+import { useState } from "react";
 
 export function SectionServices() {
 	const { t } = useTranslation();
 	const { dataOutsourcing, dataOutstaf } = useGetArrayObjects();
+	const [expanded, setExpanded] = useState(0);
 
 	return (
 		<section
@@ -22,10 +24,18 @@ export function SectionServices() {
 						<Tab className={style.service_item}>{t("services.title2")}</Tab>
 					</TabList>
 					<TabPanel>
-						<Outsourcing data={dataOutsourcing} />
+						<Outsourcing
+							data={dataOutsourcing}
+							expanded={expanded}
+							setExpanded={setExpanded}
+						/>
 					</TabPanel>
 					<TabPanel>
-						<Outstaf data={dataOutstaf} />
+						<Outstaf
+							data={dataOutstaf}
+							expanded={expanded}
+							setExpanded={setExpanded}
+						/>
 					</TabPanel>
 				</Tabs>
 			</div>
