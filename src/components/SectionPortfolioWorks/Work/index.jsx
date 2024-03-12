@@ -1,7 +1,7 @@
 import style from "./work.module.scss";
 import { ArrowGreen } from "../../Icons";
 
-export function Work({ site, img }) {
+export function Work({ site, img, isMobil }) {
 	return (
 		<div className={style.wrapper}>
 			<a
@@ -18,14 +18,16 @@ export function Work({ site, img }) {
 			<h3 className={style.title}>{site.title}</h3>
 			<div className={style.info_box}>
 				<p className={style.desc}>{site.desc}</p>
-				<a
-					href={site.url}
-					rel="noreferrer"
-					target="_blank"
-					className={style.link}
-				>
-					<ArrowGreen />
-				</a>
+				{!isMobil && (
+					<a
+						href={site.url}
+						rel="noreferrer"
+						target="_blank"
+						className={style.link}
+					>
+						<ArrowGreen />
+					</a>
+				)}
 			</div>
 		</div>
 	);

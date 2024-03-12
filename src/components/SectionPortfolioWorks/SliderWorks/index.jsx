@@ -42,14 +42,14 @@ export function SliderWorks({ isMobil, data }) {
 						// className="swiper-button-prev"
 						className={style.prevBtn}
 					>
-						<ArrowRight stroke="white"/>
+						<ArrowRight stroke="white" />
 					</div>
 					<div className={style.pagination}></div>
 					<div
 						// className="swiper-button-next"
 						className={style.nextBtn}
 					>
-						<ArrowRight stroke="white"/>
+						<ArrowRight stroke="white" />
 					</div>
 				</div>
 				{data.map((item, index) => (
@@ -61,6 +61,7 @@ export function SliderWorks({ isMobil, data }) {
 							key={index}
 							site={item[Object.keys(item)[0]]}
 							img={imagesList[index]}
+							isMobil={isMobil}
 						/>
 					</SwiperSlide>
 				))}
