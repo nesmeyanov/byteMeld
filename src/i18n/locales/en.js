@@ -92,6 +92,10 @@ export const en = {
 				title: "Fullstack",
 				desc: "Fullstack developers combine the visible part of frontend developers' work and the invisible part of backend developers' work.",
 			},
+			service4: {
+				title: "UX/UI design",
+				desc: "Our designers have unlimited imagination and a creative approach to each project. They are able to create unique and innovative designs that will help your brand stand out from the competition.",
+			},
 		},
 	},
 
