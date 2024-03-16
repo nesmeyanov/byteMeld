@@ -135,7 +135,7 @@ export const uk = {
 	forma: {
 		title: "Давайте співпрацювати",
 		typeServices: "Тип послуг",
-		outsourcing: "аутсорсинг",
+		outsourcing: "аутсорс",
 		outstaf: "аутстаф",
 		servicesTitle: "Послуги",
 		budgetTitle: "Бюджет (USD)",
@@ -144,36 +144,15 @@ export const uk = {
 		details: "Деталі проєкта",
 		btn: "Відправити заявку",
 		source: {
-			service1: {
-				title: "Landing page під ключ",
-				isCheck: false,
-			},
-			service2: {
-				title: "Багатосторінковий сайт під ключ",
-				isCheck: true,
-			},
-			service3: {
-				title: "CRM система",
-				isCheck: false,
-			},
-			service4: {
-				title: "Мобільний застосунок",
-				isCheck: false,
-			},
+			option1: "Landing page під ключ",
+			option2: "Багатосторінковий сайт під ключ",
+			option3: "CRM система",
+			option4: "Мобільний застосунок",
 		},
 		budget: {
-			option1: {
-				title: "менше 1к",
-				isCheck: false,
-			},
-			option2: {
-				title: "1к - 5к",
-				isCheck: false,
-			},
-			option3: {
-				title: "більше 10к",
-				isCheck: true,
-			},
+			option1: "менше 1к",
+			option2: "1к - 5к",
+			option3: "більше 10к",
 		},
 		staf: {
 			option1: "Frontend",

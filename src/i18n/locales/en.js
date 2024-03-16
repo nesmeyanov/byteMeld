@@ -144,36 +144,15 @@ export const en = {
 		details: "Details of project",
 		btn: "Send a request",
 		source: {
-			service1: {
-				title: "Turnkey landing page",
-				isCheck: false,
-			},
-			service2: {
-				title: "Turnkey multi-page website",
-				isCheck: true,
-			},
-			service3: {
-				title: "CRM system",
-				isCheck: false,
-			},
-			service4: {
-				title: "Mobile application",
-				isCheck: false,
-			},
+			option1: "Turnkey landing page",
+			option2: "Turnkey multi-page website",
+			option3: "CRM system",
+			option4: "Mobile application",
 		},
 		budget: {
-			option1: {
-				title: "less than 1k",
-				isCheck: false,
-			},
-			option2: {
-				title: "1к - 5к",
-				isCheck: false,
-			},
-			option3: {
-				title: "more than 10k",
-				isCheck: true,
-			},
+			option1: "less than 1k",
+			option2: "1k - 5k",
+			option3: "more than 10k",
 		},
 		staf: {
 			option1: "Frontend",

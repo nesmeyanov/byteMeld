@@ -1,0 +1,22 @@
+.wrapperForma {
+	background:
+		linear-gradient(180deg, rgba(33, 162, 255, 0.15) 0%, rgba(33, 162, 255, 0) 100%),
+		linear-gradient(0deg, rgba(0, 20, 33, 0.99) 0%, rgba(0, 20, 33, 0.99) 100%),
+		url("../../../assets/images/bg/bg_noise.jpg") lightgray 50% / cover no-repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	max-width: 1440px;
+	padding: 80px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+
+	@media (max-width: 560px) {
+	padding: 80px 10px;
+	}
+}

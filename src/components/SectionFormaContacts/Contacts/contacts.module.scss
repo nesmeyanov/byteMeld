@@ -1,0 +1,45 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 0 1 50%;
+	height: 100%;
+}
+
+.title {
+	color: var(--color-title);
+	font-family: var(--font-source-code);
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 112%;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	font-family: var(--font-source-code);
+
+	span {
+		color: var(--color-label);
+		font-variant-numeric: slashed-zero;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 150%;
+		min-width: 75px;
+	}
+
+	a {
+		color: var(--color-title);
+		font-family: "Source Code Pro";
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 142%;
+	}
+}
