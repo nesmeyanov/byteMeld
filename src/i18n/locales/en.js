@@ -131,6 +131,59 @@ export const en = {
 		},
 	},
 
+	//*** SectionForma ***/
+	forma: {
+		title: "Let's cooperate",
+		typeServices: "Type of service",
+		outsourcing: "outsourcing",
+		outstaf: "outstaf",
+		servicesTitle: "Services",
+		budgetTitle: "Budget (USD)",
+		fullName: "Full name",
+		email: "Mail",
+		details: "Details of project",
+		btn: "Send a request",
+		source: {
+			service1: {
+				title: "Turnkey landing page",
+				isCheck: false,
+			},
+			service2: {
+				title: "Turnkey multi-page website",
+				isCheck: true,
+			},
+			service3: {
+				title: "CRM system",
+				isCheck: false,
+			},
+			service4: {
+				title: "Mobile application",
+				isCheck: false,
+			},
+		},
+		budget: {
+			option1: {
+				title: "less than 1k",
+				isCheck: false,
+			},
+			option2: {
+				title: "1к - 5к",
+				isCheck: false,
+			},
+			option3: {
+				title: "more than 10k",
+				isCheck: true,
+			},
+		},
+		staf: {
+			option1: "Frontend",
+			option2: "Backend",
+			option3: "Fullstack",
+			option4: "UX/UI design",
+			option5: "QA Engineer",
+		},
+	},
+
 	//***Footer***//
 	footer: {
 		menu: {

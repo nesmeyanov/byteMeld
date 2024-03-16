@@ -131,6 +131,59 @@ export const uk = {
 		},
 	},
 
+	//*** SectionForma ***/
+	forma: {
+		title: "Давайте співпрацювати",
+		typeServices: "Тип послуг",
+		outsourcing: "аутсорсинг",
+		outstaf: "аутстаф",
+		servicesTitle: "Послуги",
+		budgetTitle: "Бюджет (USD)",
+		fullName: "Повне ім’я",
+		email: "Пошта",
+		details: "Деталі проєкта",
+		btn: "Відправити заявку",
+		source: {
+			service1: {
+				title: "Landing page під ключ",
+				isCheck: false,
+			},
+			service2: {
+				title: "Багатосторінковий сайт під ключ",
+				isCheck: true,
+			},
+			service3: {
+				title: "CRM система",
+				isCheck: false,
+			},
+			service4: {
+				title: "Мобільний застосунок",
+				isCheck: false,
+			},
+		},
+		budget: {
+			option1: {
+				title: "менше 1к",
+				isCheck: false,
+			},
+			option2: {
+				title: "1к - 5к",
+				isCheck: false,
+			},
+			option3: {
+				title: "більше 10к",
+				isCheck: true,
+			},
+		},
+		staf: {
+			option1: "Frontend",
+			option2: "Backend",
+			option3: "Fullstack",
+			option4: "UX/UI design",
+			option5: "QA Engineer",
+		},
+	},
+
 	//***Footer***//
 	footer: {
 		menu: {
