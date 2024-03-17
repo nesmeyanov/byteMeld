@@ -1,7 +1,6 @@
 import style from "./forma.module.scss";
 import { Formik, Form } from "formik";
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { FormaTypesServicesFields } from "../FormaTypesServicesFields";
 import { FormaOutsourcingFields } from "../FormaOutsourcingFields";
 import { FormaOutstafFields } from "../FormaOutstafFields";
@@ -11,9 +10,7 @@ import {
 	formaSchemaStaff,
 } from "../../../schemas/formaSchema";
 
-export function Forma({ source, budget, staff }) {
-	const { t } = useTranslation();
-
+export function Forma({ t, source, budget, staff }) {
 	const [isStaff, setIsStaff] = useState(false);
 	const handleStaff = () => setIsStaff(!isStaff);
 
@@ -44,7 +41,6 @@ export function Forma({ source, budget, staff }) {
 		<div className={style.container_forma}>
 			<Formik
 				initialValues={{
-					// staff: [],
 					...(isStaff ? { staff: [] } : {}),
 					fullName: ``,
 					email: ``,

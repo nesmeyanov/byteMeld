@@ -164,14 +164,15 @@ export const en = {
 		schema: {
 			staff1: "Select at least one option",
 			staff2: "Select at least one option",
-			fullName1: "Field should contain only letters",
-			fullName2: "Minimum number of letters 2",
-			fullName3: "This field is required",
-			email1: "Invalid email format",
-			email2: "This field is required",
-			details1: "Minimum number of characters 10",
-			details2: "This field is required",
+			fullName1: "Letters only",
+			fullName2: "Minimum 2 letters",
+			fullName3: "Field is required",
+			email1: "Invalid format",
+			email2: "Field is required",
+			details1: "Minimum 10 characters",
+			details2: "Field is required",
 		},
+		tell: "Tell us about your project",
 	},
 
 	//***Footer***//

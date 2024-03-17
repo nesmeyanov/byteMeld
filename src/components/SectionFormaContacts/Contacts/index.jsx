@@ -1,8 +1,6 @@
 import style from "./contacts.module.scss"
-import { useTranslation } from "react-i18next";
 import {listLinks}	from "./listLinks.js"
-export function Contacts() {
-	const { t } = useTranslation();
+export function Contacts({t}) {
 
 	return (
 		<div className={style.wrapper}>
