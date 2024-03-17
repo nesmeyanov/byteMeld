@@ -6,8 +6,10 @@ export function FormaOutsourcingFields({
 	t,
 	source,
 	selectedService,
+	setSelectedService,
 	budget,
 	selectedBudget,
+	setSelectedBudget
 }) {
 	return (
 		<div className={style.source_container}>
@@ -30,7 +32,7 @@ export function FormaOutsourcingFields({
 									value={option}
 									className={style.radioCheck}
 									checked={selectedService === option}
-									onChange={() => handleChangeRadio(option, selectedService)}
+									onChange={() => handleChangeRadio(option, setSelectedService)}
 								/>
 								<span className={style.radioName}>{option}</span>
 								<span className={style.customRadio}></span>
@@ -58,7 +60,7 @@ export function FormaOutsourcingFields({
 									value={option}
 									className={style.radioCheck}
 									checked={selectedBudget === option}
-									onChange={() => handleChangeRadio(option, selectedBudget)}
+									onChange={() => handleChangeRadio(option, setSelectedBudget)}
 								/>
 								<span className={style.radioName}>{option}</span>
 								<span className={style.customRadio}></span>
