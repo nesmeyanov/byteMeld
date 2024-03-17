@@ -9,8 +9,9 @@ export function FormaOutsourcingFields({
 	setSelectedService,
 	budget,
 	selectedBudget,
-	setSelectedBudget
+	setSelectedBudget,
 }) {
+
 	return (
 		<div className={style.source_container}>
 			<div className={style.services_box}>

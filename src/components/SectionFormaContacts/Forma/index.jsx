@@ -6,6 +6,10 @@ import { FormaTypesServicesFields } from "../FormaTypesServicesFields";
 import { FormaOutsourcingFields } from "../FormaOutsourcingFields";
 import { FormaOutstafFields } from "../FormaOutstafFields";
 import { FormaInputFields } from "../FormaInputFields";
+import {
+	formaSchemaSource,
+	formaSchemaStaff,
+} from "../../../schemas/formaSchema";
 
 export function Forma({ source, budget, staff }) {
 	const { t } = useTranslation();
@@ -25,6 +29,8 @@ export function Forma({ source, budget, staff }) {
 		t("forma.budget.option3")
 	);
 
+	let validationSchema = isStaff ? formaSchemaStaff(t) : formaSchemaSource(t);
+
 	useEffect(() => {
 		isStaff
 			? setSelectedTypeService(t("forma.outstaf"))
@@ -38,11 +44,13 @@ export function Forma({ source, budget, staff }) {
 		<div className={style.container_forma}>
 			<Formik
 				initialValues={{
-					staff: [],
+					// staff: [],
+					...(isStaff ? { staff: [] } : {}),
 					fullName: ``,
 					email: ``,
 					details: ``,
 				}}
+				validationSchema={validationSchema}
 				onSubmit={(values, { resetForm }) => {
 					const order = {
 						typeService: selectedTypeService,
@@ -83,10 +91,16 @@ export function Forma({ source, budget, staff }) {
 							<FormaOutstafFields
 								t={t}
 								staff={staff}
+								staffErr={formikProps.errors.staff}
 							/>
 						)}
 
-						<FormaInputFields t={t} />
+						<FormaInputFields
+							t={t}
+							fullNameErr={formikProps.errors.fullName}
+							emailErr={formikProps.errors.email}
+							detailsErr={formikProps.errors.details}
+						/>
 						<button
 							type="submit"
 							className={style.btn_forma}

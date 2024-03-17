@@ -161,6 +161,17 @@ export const en = {
 			option4: "UX/UI design",
 			option5: "QA Engineer",
 		},
+		schema: {
+			staff1: "Select at least one option",
+			staff2: "Select at least one option",
+			fullName1: "Field should contain only letters",
+			fullName2: "Minimum number of letters 2",
+			fullName3: "This field is required",
+			email1: "Invalid email format",
+			email2: "This field is required",
+			details1: "Minimum number of characters 10",
+			details2: "This field is required",
+		},
 	},
 
 	//***Footer***//

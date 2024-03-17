@@ -1,20 +1,36 @@
 import * as Yup from "yup";
+import i18n from "i18next";
 
-export const formaSchema = Yup.object()({
-	staff: Yup.array()
-		.min(1, "Виберіть хоча б одну опцію")
-		.required("Виберіть хоча б одну опцію"),
-	fullName: Yup.string()
-		.matches(/^[a-zA-Zа-яА-Я]+$/, "Поле має містити тільки літери")
-		.min(2, "Мінімальна кількість літер 2")
-		.required("Поле обов'язкове для заповнення"),
-	email: Yup.string()
-		.matches(
-			/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
-			"Невірний формат електронної пошти"
-		)
-		.required("Поле обов'язкове для заповнення"),
-	details: Yup.string()
-		.min(10, "Мінімальна кількість символів 10")
-		.required("Поле обов'язкове для заповнення"),
-});
+export const formaSchemaSource = (t) =>
+	Yup.object({
+		fullName: Yup.string()
+			.matches(/^[a-zA-Zа-яА-Я]+$/, i18n.t("forma.schema.fullName1"))
+			.min(2, i18n.t("forma.schema.fullName2"))
+			.required(i18n.t("forma.schema.fullName3")),
+		email: Yup.string()
+			.matches(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/, i18n.t("forma.schema.email1"))
+			.required(i18n.t("forma.schema.email2")),
+		details: Yup.string()
+			.min(10, i18n.t("forma.schema.details1"))
+			.required(i18n.t("forma.schema.details2")),
+	});
+
+export const formaSchemaStaff = (t) =>
+	Yup.object({
+		staff: Yup.array()
+			.min(1, i18n.t("forma.schema.staff1"))
+			.required(i18n.t("forma.schema.staff2")),
+		fullName: Yup.string()
+			.matches(/^[a-zA-Zа-яА-Я]+$/, i18n.t("forma.schema.fullName1"))
+			.min(2, i18n.t("forma.schema.fullName2"))
+			.required(i18n.t("forma.schema.fullName3")),
+		email: Yup.string()
+			.matches(
+				/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
+				i18n.t("forma.schema.email1")
+			)
+			.required(i18n.t("forma.schema.email2")),
+		details: Yup.string()
+			.min(10, i18n.t("forma.schema.details1"))
+			.required(i18n.t("forma.schema.details2")),
+	});

@@ -1,7 +1,8 @@
 import style from "../Forma/forma.module.scss";
 import { Field } from "formik";
 
-export function FormaOutstafFields({t, staff}) {
+export function FormaOutstafFields({ t, staff, staffErr }) {
+
 	return (
 		<div className={style.staff_box}>
 			<h3 className={style.title}>{t("forma.servicesTitle")}</h3>
@@ -27,6 +28,7 @@ export function FormaOutstafFields({t, staff}) {
 						</label>
 					);
 				})}
+				{staffErr && <p className={style.error}>{staffErr}</p>}
 			</div>
 		</div>
 	);

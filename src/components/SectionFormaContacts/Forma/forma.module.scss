@@ -92,6 +92,7 @@
 	align-items: center;
 	gap: 20px;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .budget_box {
@@ -112,6 +113,7 @@
 	flex-direction: column;
 	gap: 10px;
 	min-height: 260px;
+	position: relative;
 }
 
 .input_box {
@@ -129,6 +131,7 @@
 	font-weight: 400;
 	line-height: 144%;
 	background: var(--color-container);
+	position: relative;
 }
 
 .labelInput {
@@ -171,4 +174,12 @@
 		color: var(--color-light-green);
 		transition: all 0.3s ease-in-out;
 	}
+}
+
+.error{
+	color: red;
+	position: absolute;
+	bottom: -30px;
+	font-family: var(--font-source-code);
+	font-size: 14px;
 }
