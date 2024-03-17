@@ -3,7 +3,7 @@ import { Formik, Field, Form } from "formik";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-export function Forma({ source, budget, staf }) {
+export function Forma({ source, budget, staff }) {
 	const { t } = useTranslation();
 
 	const [isStaff, setIsStaff] = useState(false);
@@ -20,7 +20,7 @@ export function Forma({ source, budget, staf }) {
 		setSelectedBudget(id);
 	};
 
-	console.log(staf);
+	console.log(staff);
 
 	return (
 		<div className={style.container_forma}>

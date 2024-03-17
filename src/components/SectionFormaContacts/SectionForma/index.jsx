@@ -4,7 +4,7 @@ import { Contacts } from "../Contacts";
 import { useGetArrayObjects } from "../../../utils/hooks";
 
 export function SectionForma() {
-	const { dataFormaSource, dataFormaBudget, dataFormaStaf } =
+	const { dataFormaSource, dataFormaBudget, dataFormaStaff } =
 		useGetArrayObjects();
 
 	return (
@@ -17,7 +17,7 @@ export function SectionForma() {
 				<Forma
 					source={dataFormaSource}
 					budget={dataFormaBudget}
-					staf={dataFormaStaf}
+					staff={dataFormaStaff}
 				/>
 			</div>
 		</section>

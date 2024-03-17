@@ -154,7 +154,7 @@ export const en = {
 			option2: "1k - 5k",
 			option3: "more than 10k",
 		},
-		staf: {
+		staff: {
 			option1: "Frontend",
 			option2: "Backend",
 			option3: "Fullstack",

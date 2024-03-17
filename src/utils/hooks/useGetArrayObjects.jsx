@@ -15,7 +15,7 @@ export function useGetArrayObjects() {
 	const dataPortfolio = useNestedObjectTranslation(uk, "portfolio", "finished");
 	const dataFormaSource = useNestedObjectTranslation(uk, "forma", "source");
 	const dataFormaBudget = useNestedObjectTranslation(uk, "forma", "budget");
-	const dataFormaStaf = useNestedObjectTranslation(uk, "forma", "staf");
+	const dataFormaStaff = useNestedObjectTranslation(uk, "forma", "staff");
 
 	return {
 		dataMenu,
@@ -26,6 +26,6 @@ export function useGetArrayObjects() {
 		dataPortfolio,
 		dataFormaSource,
 		dataFormaBudget,
-		dataFormaStaf,
+		dataFormaStaff,
 	};
 }
