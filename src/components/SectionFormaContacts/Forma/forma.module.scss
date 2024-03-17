@@ -1,6 +1,6 @@
 .container_forma {
 	width: 100%;
-	flex: 0 1 50%;
+	flex: 0 1 49%;
 }
 
 .form {
@@ -107,6 +107,13 @@
 	flex-wrap: wrap;
 }
 
+.staff_box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	min-height: 260px;
+}
+
 .input_box {
 	display: flex;
 	gap: 40px;
@@ -134,10 +141,14 @@
 
 .input {
 	padding: 10px 20px;
+	width: 100%;
 }
 
 .textArea {
 	padding: 15px 20px;
+	width: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .btn_forma {
