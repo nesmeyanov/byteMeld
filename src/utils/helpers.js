@@ -10,3 +10,7 @@ export const scrollTo = (start) => {
 export const scrollUpPage = () => {
 	window.scrollTo({ top: 0, behavor: "smooth" });
 };
+
+export const handleChangeRadio = (option, setOption) => {
+	setOption(option);
+};
