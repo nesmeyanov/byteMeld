@@ -26,7 +26,7 @@ export default function BackToTopButton() {
 				if (buttonRef.current) {
 					buttonRef.current.style.bottom = newBottomPosition + "px";
 				}
-			} else if (!isMobileS) {
+			} else if (!isMobileS && buttonRef.current) {
 				buttonRef.current.style.bottom = "revert-layer";
 			}
 		};
