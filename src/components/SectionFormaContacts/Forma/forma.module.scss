@@ -227,7 +227,7 @@
 }
 
 .error{
-	color: red;
+	color: var(--color-validation);
 	position: absolute;
 	bottom: -30px;
 	font-family: var(--font-source-code);
