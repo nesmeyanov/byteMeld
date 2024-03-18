@@ -13,40 +13,32 @@ export default function BackToTopButton() {
 	const buttonRef = useRef(null);
 
 	useEffect(() => {
-		const handleScroll = () => {
-			const documentHeight = document.documentElement.scrollHeight;
-			const windowHeight = window.innerHeight;
-			const bottomOffset = documentHeight - windowHeight - 658;
-
-			if (isMobileS && window.scrollY > 100 && window.scrollY < bottomOffset) {
-				const scrollDistance = window.scrollY - 100;
-				const ratio = scrollDistance / (bottomOffset - 100);
-				const newBottomPosition = 170 + ratio * (658 - 170);
-
-				if (buttonRef.current) {
-					buttonRef.current.style.bottom = newBottomPosition + "px";
-				}
-			} else if (!isMobileS && buttonRef.current) {
-				buttonRef.current.style.bottom = "revert-layer";
-			}
-		};
-
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, [isMobileS]);
-
-	useEffect(() => {
 		window.addEventListener("scroll", () => {
 			if (window.scrollY > 100) {
 				setBacktoTop(true);
 			} else {
 				setBacktoTop(false);
 			}
+
+			if (
+				isMobileS &&
+				buttonRef.current &&
+				window.innerHeight + window.scrollY >=
+					document.documentElement.scrollHeight
+			) {
+				buttonRef.current.style.bottom = "658px";
+			} else if (
+				isMobileS &&
+				buttonRef.current &&
+				window.innerHeight + window.scrollY <
+					document.documentElement.scrollHeight
+			) {
+				buttonRef.current.style.bottom = "170px";
+			} else if (!isMobileS && buttonRef.current) {
+				buttonRef.current.style.bottom = "revert-layer";
+			}
 		});
-	}, []);
+	}, [isMobileS]);
 
 	return (
 		<AnimatePresence>

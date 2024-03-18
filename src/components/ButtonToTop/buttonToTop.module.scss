@@ -12,6 +12,10 @@
 	cursor: pointer;
 	z-index: 2;
 
+	.down {
+		bottom: 658px;
+	}
+
 	@media (max-width: 860px) {
 		right: 40px;
 		bottom: 190px;
