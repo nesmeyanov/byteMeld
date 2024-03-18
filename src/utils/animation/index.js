@@ -6,3 +6,4 @@ export { wordAnimation } from "./introAnimation";
 export { borderAnimation } from "./introAnimation";
 export { bodyAnimation } from "./serviceAnimation";
 export { hiddenAnimation } from "./serviceAnimation";
+export { buttonAnimation } from "./buttonToTop";
