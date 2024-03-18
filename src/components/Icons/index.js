@@ -8,3 +8,4 @@ export { Check } from "./check.jsx";
 export { Target } from "./target.jsx";
 export { Chat } from "./chat.jsx";
 export { ArrowGreen } from "./arrow-green.jsx";
+export { ArrowUp } from "./arrow-up.jsx";
