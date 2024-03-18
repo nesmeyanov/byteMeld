@@ -96,6 +96,10 @@ export const en = {
 				title: "UX/UI design",
 				desc: "Our designers have unlimited imagination and a creative approach to each project. They are able to create unique and innovative designs that will help your brand stand out from the competition.",
 			},
+			service5: {
+				title: "QA Engineer",
+				desc: "QA-engineers who ensure the reliability and high quality of YOUR products. This is an important part of the software development process, aimed at ensuring that the product meets the requirements, is stable and safe to use.",
+			},
 		},
 	},
 
