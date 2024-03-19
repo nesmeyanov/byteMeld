@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bytemeld-dev-235904-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211125631501:role/amplify-bytemeld-dev-235904-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211125631501:role/amplify-bytemeld-dev-235904-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-bytemeld-dev-235904-deployment",
+      "UnauthRoleName": "amplify-bytemeld-dev-235904-unauthRole",
+      "StackName": "amplify-bytemeld-dev-235904",
+      "StackId": "arn:aws:cloudformation:eu-central-1:211125631501:stack/amplify-bytemeld-dev-235904/bd4c49f0-e572-11ee-87fd-02789809c7f3",
+      "AmplifyAppId": "d3kgb55vr5tlzd"
+    },
+    "categories": {
+      "function": {
+        "bytemeldLambda": {
+          "deploymentBucketName": "amplify-bytemeld-dev-235904-deployment",
+          "s3Key": "amplify-builds/bytemeldLambda-70495a476e304b796d58-build.zip"
+        }
+      }
+    }
+  }
+}
