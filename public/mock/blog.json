@@ -1,0 +1,195 @@
+{
+	"blog": [
+		{
+			"slug": "everything-you-need-know-node-js",
+			"date": "20/02/2024",
+			"mainUrl": "images/1/main1.png",
+			"dataUA": {
+				"title": "Все що потрібно знати про Node.js: особливості, характеристики, область застосування",
+				"subtitle": "Node.js — що це?",
+				"description": "Node.js - це потужна платформа, яка протягом кількох років змінила уявлення про розробку веб-додатків. Її ключова ідея полягає в тому, щоб зробити вже популярний JavaScript мовою загального призначення, придатною як для фронтенду, так і для бекенду. Основний принцип Node.js – модель асинхронного програмування. Це означає, що розробники можуть створювати ефективні та чуйні додатки, спроможні одночасно обробляти безліч запитів. Node.js також відомий своєю легкістю та швидкістю роботи, що дозволяє ефективно використовувати ресурси сервера. Node.js став однією з найпопулярніших платформ для створення веб-серверів, API, мікросервісів та багато іншого. У цьому тексті ми розглянемо плюси та мінуси, а також основні можливості Node.js. Вивчимо його архітектуру, способи розробки додатків, а також розглянемо деякі практичні приклади, щоб краще зрозуміти, як використовувати цю потужну платформу для створення сучасних серверних додатків."
+			
+			},
+			"dataEN": {
+				"title": "Everything you need to know about Node.js: features, characteristics, scope",
+				"subtitle": "Node.js - what is it?",
+				"description": "Node.js is a powerful platform that has changed the way we think about web application development over the past few years. Its key idea is to make the already popular JavaScript a general-purpose language suitable for both front-end and back-end development. The main principle of Node.js is the asynchronous programming model. This means that developers can create efficient and responsive applications that can process many requests simultaneously. Node.js is also known for its lightness and speed, which allows you to use server resources efficiently. Node.js has become one of the most popular platforms for creating web servers, APIs, microservices, and much more. In this text, we will consider the pros and cons, as well as the main features of Node.js. We will study its architecture, application development methods, and look at some practical examples to better understand how to use this powerful platform to build modern server-side applications."
+				
+			}
+		},
+
+		{
+			"slug": "everything-you-need-know-about-node-js",
+			"date": "22/02/2024",
+			"mainUrl": "images/2/main2.png",
+			"dataUA": {
+				"title": "Все що потрібно знати про Node.js: особливості, характеристики, область застосування",
+				"subtitle": "Node.js — що це?",
+				"description": "Node.js - це потужна платформа, яка протягом кількох років змінила уявлення про розробку веб-додатків. Її ключова ідея полягає в тому, щоб зробити вже популярний JavaScript мовою загального призначення, придатною як для фронтенду, так і для бекенду. Основний принцип Node.js – модель асинхронного програмування. Це означає, що розробники можуть створювати ефективні та чуйні додатки, спроможні одночасно обробляти безліч запитів. Node.js також відомий своєю легкістю та швидкістю роботи, що дозволяє ефективно використовувати ресурси сервера. Node.js став однією з найпопулярніших платформ для створення веб-серверів, API, мікросервісів та багато іншого. У цьому тексті ми розглянемо плюси та мінуси, а також основні можливості Node.js. Вивчимо його архітектуру, способи розробки додатків, а також розглянемо деякі практичні приклади, щоб краще зрозуміти, як використовувати цю потужну платформу для створення сучасних серверних додатків."
+			},
+			"dataEN": {
+				"title": "Everything you need to know about Node.js: features, characteristics, scope",
+				"subtitle": "Node.js - what is it?",
+				"description": "Node.js is a powerful platform that has changed the way we think about web application development over the past few years. Its key idea is to make the already popular JavaScript a general-purpose language suitable for both front-end and back-end development. The main principle of Node.js is the asynchronous programming model. This means that developers can create efficient and responsive applications that can process many requests simultaneously. Node.js is also known for its lightness and speed, which allows you to use server resources efficiently. Node.js has become one of the most popular platforms for creating web servers, APIs, microservices, and much more. In this text, we will consider the pros and cons, as well as the main features of Node.js. We will study its architecture, application development methods, and look at some practical examples to better understand how to use this powerful platform to build modern server-side applications."
+			}
+		},
+
+		{
+			"slug": "everything-you-need-to-know-about-node",
+			"date": "26/02/2024",
+			"mainUrl": "images/3/main3.png",
+			"dataUA": {
+				"title": "Все що потрібно знати про Node.js: особливості, характеристики, область застосування",
+				"subtitle": "Node.js — що це?",
+				"description": "Node.js - це потужна платформа, яка протягом кількох років змінила уявлення про розробку веб-додатків. Її ключова ідея полягає в тому, щоб зробити вже популярний JavaScript мовою загального призначення, придатною як для фронтенду, так і для бекенду. Основний принцип Node.js – модель асинхронного програмування. Це означає, що розробники можуть створювати ефективні та чуйні додатки, спроможні одночасно обробляти безліч запитів. Node.js також відомий своєю легкістю та швидкістю роботи, що дозволяє ефективно використовувати ресурси сервера. Node.js став однією з найпопулярніших платформ для створення веб-серверів, API, мікросервісів та багато іншого. У цьому тексті ми розглянемо плюси та мінуси, а також основні можливості Node.js. Вивчимо його архітектуру, способи розробки додатків, а також розглянемо деякі практичні приклади, щоб краще зрозуміти, як використовувати цю потужну платформу для створення сучасних серверних додатків."
+			
+			},
+			"dataEN": {
+				"title": "Everything you need to know about Node.js: features, characteristics, scope",
+				"subtitle": "Node.js - what is it?",
+				"description": "Node.js is a powerful platform that has changed the way we think about web application development over the past few years. Its key idea is to make the already popular JavaScript a general-purpose language suitable for both front-end and back-end development. The main principle of Node.js is the asynchronous programming model. This means that developers can create efficient and responsive applications that can process many requests simultaneously. Node.js is also known for its lightness and speed, which allows you to use server resources efficiently. Node.js has become one of the most popular platforms for creating web servers, APIs, microservices, and much more. In this text, we will consider the pros and cons, as well as the main features of Node.js. We will study its architecture, application development methods, and look at some practical examples to better understand how to use this powerful platform to build modern server-side applications."
+		
+			}
+		},
+
+		{
+			"slug": "everything-you-need-to-know-about-node-js",
+			"date": "01/03/2024",
+			"mainUrl": "images/4/main4.png",
+			"dataUA": {
+				"title": "Все що потрібно знати про Node.js: особливості, характеристики, область застосування",
+				"subtitle": "Node.js — що це?",
+				"description": "Node.js - це потужна платформа, яка протягом кількох років змінила уявлення про розробку веб-додатків. Її ключова ідея полягає в тому, щоб зробити вже популярний JavaScript мовою загального призначення, придатною як для фронтенду, так і для бекенду. Основний принцип Node.js – модель асинхронного програмування. Це означає, що розробники можуть створювати ефективні та чуйні додатки, спроможні одночасно обробляти безліч запитів. Node.js також відомий своєю легкістю та швидкістю роботи, що дозволяє ефективно використовувати ресурси сервера. Node.js став однією з найпопулярніших платформ для створення веб-серверів, API, мікросервісів та багато іншого. У цьому тексті ми розглянемо плюси та мінуси, а також основні можливості Node.js. Вивчимо його архітектуру, способи розробки додатків, а також розглянемо деякі практичні приклади, щоб краще зрозуміти, як використовувати цю потужну платформу для створення сучасних серверних додатків."
+			
+			},
+			"dataEN": {
+				"title": "Everything you need to know about Node.js: features, characteristics, scope",
+				"subtitle": "Node.js - what is it?",
+				"description": "Node.js is a powerful platform that has changed the way we think about web application development over the past few years. Its key idea is to make the already popular JavaScript a general-purpose language suitable for both front-end and back-end development. The main principle of Node.js is the asynchronous programming model. This means that developers can create efficient and responsive applications that can process many requests simultaneously. Node.js is also known for its lightness and speed, which allows you to use server resources efficiently. Node.js has become one of the most popular platforms for creating web servers, APIs, microservices, and much more. In this text, we will consider the pros and cons, as well as the main features of Node.js. We will study its architecture, application development methods, and look at some practical examples to better understand how to use this powerful platform to build modern server-side applications."
+				
+			}
+		},
+
+		{
+			"slug": "nextjs-and-new-server-side-components",
+			"date": "02/03/2024",
+			"mainUrl": "images/5/main5.png",
+			"dataUA": {
+				"title": "NextJS та нові серверні компоненти — навіщо потрібні та як готувати",
+				"subtitle": "Навіщо з’явилися серверні компоненти?",
+				"description": "Давайте почнемо з найважливішого — відповіді на запитання «Навіщо з’явилися серверні компоненти»?Як ви, напевно вже знаєте, спрощено, Next.JS працює наступним чином: Клієнт звертається за адресою, яку обслуговую Next.JS сервер, Next.JS, в рантаймі (можуть бути опитмізації з кешуванням), отримує необхідні для створінки дані, І створює HTML сторінку, яку, разом з JS кодом, відправляє клієнтові, Оскільки сторінка є звичайним HTML-ем — користувач бачить її по мірі завантаження і, на відміну від SPA, не чекає допоки React створить її з нуля на клієнті, Після отримання клієнтського бандлу відбувається процес гідрації — перетворення статичного HTML-у на звичний нам React застосунок, з яким користувач може взаємодіяти. Якщо гідрацію не робити, користувач просто не зможе взаємодіяти з HTML сторінкою, тому що всі event listner додаються саме на цьому етапі"
+			},
+			"dataEN": {
+				"title": "NextJS and new server-side components - why you need them and how to prepare them",
+				"subtitle": "Why did server-side components come about?",
+				"description": "Let's start with the most important thing - the answer to the question 'Why did server components appear?'As you probably already know, in a simplified way, Next.JS works as follows: A client accesses the address served by the Next.JS server, Next. JS, in real-time (there may be polling with caching), receives the data it needs to create the page, and creates an HTML page, which, along with the JS code, is sent to the client, Since the page is plain HTML, the user sees it as it loads and, unlike SPA, does not wait for React to create it from scratch on the client, After receiving the client bundle, the hydration process takes place - turning static HTML into a familiar React application that the user can interact with. If you don't do hydration, the user simply won't be able to interact with the HTML page, because all event listners are added at this stage."
+			}
+		},
+
+		{
+			"slug": "what-css-is-and-why-a-web-developer-needs-it",
+			"date": "10/03/2024",
+			"mainUrl": "images/6/main6.png",
+			"url2": "images/6/1_6.png",
+			"url3": "images/6/2_6.png",
+			"dataUA": {
+				"title": "Що таке CSS і для чого потрібен веб-розробнику",
+				"subtitle": "Що таке CSS",
+				"description": "Кожен HTML-документ має базові параметри для тегів. Наприклад, розташування параграфів для тега [p], точки для ненумерованих списків і лінії розмітки для табличок. Але сьогодні цього недостатньо. Сайт має бути привабливим, красиво оформленим і наповнений графічними елементами. За візуальне оформлення Web-сторінки відповідає наступна сходинка - CSS. Перекладається як «Каскадні таблиці стилів». CSS — це набір команд, які відповідають за візуалізацію сторінки. Наприклад, додати колір тексту, розмістити параграфи в рядок або колонками, змінити розмір картинок. Завдання CSS — прикрасити сайт, надати проєкту завершеного вигляду.",
+				"subtitle2": "Навіщо потрібні команди CSS",
+				"description2": "Зараз без CSS-стилів неможливо створити повноцінний сайт. З розвитком CSS він став універсальним - його теги не потрібно налаштовувати під браузер. Також він кешується після першого запуску і запам'ятовується браузером. Це дає змогу швидше завантажувати сторінки. ",
+				"subtitle3": "Хто і як працює з CSS-кодом",
+				"description3": "На початку 2000-х жорсткого поділу на Front-end і Back-end не було. Програмістів на HTML і CSS називали «верстальниками». Слово залишили в ужитку, але розробники прокачалися далі. Тепер їх називають «веб-розробник» або «фронтенд-розробник». А верстальники займаються рядовими завданнями. Наприклад, пишуть HTML-документи і прикріплюють стилі. В інші мови вони не сунуться. На практиці знання HTML і CSS стануть у пригоді в будь-якому сайтобудуванні та застосунках: від складних платіжних систем до односторінкових сайтів. Основ CSS можна навчитися з нуля, не будучи технічним фахівцем. Наприклад, в IT STEP є курс «Front-end розробка», на якому можна розібратися з CSS, HTML. А ще перейти на третю сходинку і прокачатися в JavaScript."		
+			},
+			"dataEN": {
+				"title": "What CSS is and why a web developer needs it",
+				"subtitle": "What is CSS",
+				"description": "Every HTML document has basic parameters for tags. For example, paragraph spacing for the [p] tag, bullet points for unnumbered lists, and markup lines for labels. But this is not enough today. A website should be attractive, beautifully designed and filled with graphic elements. The next step is CSS, which is responsible for the visual design of a web page. It stands for Cascading Style Sheets. CSS is a set of commands that are responsible for the visualisation of a page. For example, you can add a text colour, arrange paragraphs in a row or columns, resize images. The task of CSS is to decorate the site, to give the project a complete look.",
+				"subtitle2": "Why you need CSS commands",
+				"description2": "Nowadays, it is impossible to create a full-fledged website without CSS styles. With the development of CSS, it has become universal - its tags do not need to be configured for the browser. It is also cached after the first launch and remembered by the browser. This makes it possible to load pages faster. ",
+				"subtitle3": "Who works with CSS code and how.",
+				"description3": "In the early 2000s, there was no strict division between Front-end and Back-end. HTML and CSS programmers were called 'layout designers'. The word has remained in use, but the developers have moved on. Now they are called 'web developer' or 'front-end developer'. And coders deal with ordinary tasks. For example, they write HTML documents and attach styles. They don't get involved in other languages. In practice, knowledge of HTML and CSS will be useful in any website development and applications: from complex payment systems to single-page websites. You can learn the basics of CSS from scratch without being a technical expert. For example, IT STEP has a course called Front-end Development, where you can learn CSS and HTML. You can also go to the third stage and improve your skills in JavaScript."
+			}
+		},
+
+		{
+			"slug": "sky-destroyer-project",
+			"date": "12/03/2024",
+			"mainUrl": "images/7/main7.png",
+			"url2": "images/7/1_7.png",
+			"dataUA": {
+				"title": "Проєкт Sky Destroyer: український дрон, який зможе віддалено розстрілювати ворога",
+				"subtitle": "Проєкт Sky Destroyer",
+				"description": "Sky Destroyer — проєкт безпілотної платформи на базі квадрокоптера підвищеної вантажності. За задумом авторів, на платформу можна буде причепити різноманітну стрілецьку зброю та користуватись нею з безпечної відстані.",
+				"subtitle2": "Як можна гарантувати ураження, ще й віддаленно?",
+				"description2": "На підвіс Sky Destroyer можна прикріпити чимало різнотипної стрілецької зброї. Вона матиме двовісне, тобто рухатись вверх-вниз та вправо-вліво, наведення. Приціл буде також відбуватись автоматично, за допомогою оптики, а стабілізувати відео будемо завдяки стедікам. Це дозволить Sky Destroyer відстрілювати навіть рухомі цілі."
+			},
+			"dataEN": {
+				"title": "Sky Destroyer project: Ukrainian drone that can remotely shoot the enemy",
+				"subtitle": "Project Sky Destroyer",
+				"description": "Sky Destroyer is a project of an unmanned platform based on a heavy-duty quadcopter. According to the authors, the platform will be able to attach a variety of small arms and use them from a safe distance.",
+				"subtitle2": "How can you guarantee a hit, even remotely?",
+				"description2": "The Sky Destroyer can be mounted on a wide variety of small arms. It will have a biaxial, i.e. up and down and right and left, guidance. The aiming will also be automatic, using optics, and the video will be stabilised by steadicams. This will allow Sky Destroyer to shoot even moving targets."
+			}
+		},
+
+		{
+			"slug": "who-is-a-fullstack-developer-and-what-does-he-do",
+			"date": "15/03/2024",
+			"mainUrl": "images/8/main8.png",
+			"url2": "images/8/1_8.png",
+			"url3": "images/8/2_8.png",
+			"url4": "images/8/3_8.png",
+			"dataUA": {
+				"title": "Хто такий Fullstack-розробник і чим він займається",
+				"subtitle": "Чим займається Fullstack Developer",
+				"description": " Fullstack Developer може самостійно розробляти софт від ідеї і до реалізації. Він працює з користувацькими інтерфейсами, базами даних, а ще створює і підтримує архітектуру застосунків та забезпечує кібербезпеку. Для цього Fullstack-розробник мусить володіти широким набором знань і навичок, серед яких: HTML, CSS і JavaScript для створення користувацького інтерфейсу та взаємодії з клієнтською частиною ПЗ. Глибоке розуміння мов програмування, як-от Java, Python, Ruby або PHP, для роботи з бекендом і серверною логікою. Бази даних на кшталт MySQL і MongoDB для зберігання та управління даними. Фреймворки та інструменти для розробки, наприклад: Angular, Node.js чи Django. Один із ключових скілів Fullstack-програміста — здатність ефективно взаємодіяти з командою та клієнтами, щоб розуміти вимоги проєкту, обговорювати їх і пропонувати відповідні рішення.",
+				"subtitle2": "Задачі та обов’язки Fullstack-розробника в IT",
+				"description2": "Fullstack Developer — це універсальний фахівець, що виконує багато різних завдань. Ось деякі з них: розробка сайтів та застосунків. Це основна задача Fullstack-програміста. Він пише код для Frontend і Backend, створює інтерактивні елементи, працює з базами даних та серверами. Проєктування і планування. Fullstack-розробник може брати участь у створенні архітектури проєкту, виборі відповідних технологій та інструментів. Розробка користувацького інтерфейсу. Fullstack Developer мусить працювати у зв’язці з UI/UX-дизайнером і бути з ним на одній хвилі, щоб створювати зручні та зрозумілі інтерфейси. Робота на стороні сервера. Обробка запитів, робота з базами даних, аутентифікація користувачів тощо. Розробка API для обміну даними між фронтендом і бекендом. Безпека. Fullstack Developer має бути в курсі можливих загроз і вживати заходів для захисту софту від злому та несанкціонованого доступу. Інтеграція різних сторонніх сервісів. Оптимізація продуктивності. Тестування та налагодження коду.Робота із системами контролю версій, наприклад, Git. Розгортання та управління застосунками на серверах або в хмарі. Оновлення та підтримка продукту за потреби.",
+				"subtitle3": "Типовий робочий день Fullstack-розробника",
+				"description3": "Fullstack Developer може починати день із перевірки пошти та планування завдань з урахуванням їхньої терміновості та важливості. Потім він переходить до створення користувацького інтерфейсу з використанням HTML, CSS і JavaScript. Або розробки бекенда, працюючи з базами даних і мовами програмування, як-от Java або Python. Також Fullstack Developer може зіткнутися з проблемами та помилками, які потрібно вирішити за допомогою тестування та налагодження коду. Протягом дня Fullstack-програміст бере участь у різних мітингах: з командою для обговорення деталей проєкту, з клієнтами для уточнення вимог або з Project-менеджером для звіту щодо прогресу. Увечері він може працювати з документацією, планувати задачі на наступний день або вчитися чогось нового, щоби бути в курсі останніх трендів і технологій.",
+				"subtitle4": "Fullstack Developer в IT: переваги та недоліки професії",
+				"description4": "Серед переваг можна виділити: Різноманітність проєктів. Завдяки широкому спектру навичок, Fullstack-розробник може займатися безліччю проєктів — від простих сайтів до складних корпоративних систем. Високий дохід. Зарплата Junior Fullstack Developer в Україні стартує від $980 і зростає до $2475 для рівня middle і $4750 — senior (дані Dou, літо 2023). Попит на ринку праці. Fullstack-програмісти завжди потрібні, оскільки вони можуть виконувати задачі, пов’язані з обома сторонами розробки. Це робить їх конкурентоспроможними та дає чудові можливості для працевлаштування. Глибоке розуміння проєктів. Робота з фронтендом і бекендом дає змогу Fullstack-розробникам бачити загальну картину і враховувати різні аспекти проєкту під час ухвалення рішень. Саморозвиток і ком’юніті однодумців. Гнучкий графік, віддалена робота і всі плюшки IT-компаній. Ось основні мінуси: Велика відповідальність і високі вимоги до навичок. Fullstack Developer відповідає за всі аспекти проєкту, від дизайну до реалізації. Необхідність постійного навчання. Технології змінюються, і Fullstack-розробникам потрібно завжди бути в курсі останніх трендів та інновацій. Тут знадобиться допитливість. Ризик перевантаження. Великий обсяг роботи та широкий спектр обов’язків можуть призвести до вигорання і стресу. Розмиття спеціалізації. Порівняно з програмістами, які працюють тільки з Backend або Frontend, Fullstack Developer може не бути настільки серйозним експертом у кожній галузі."
+			},
+			"dataEN": {
+				"title": "Who is a Fullstack developer and what does he do",
+				"subtitle": "What a Fullstack Developer does",
+				"description": "A Fullstack Developer can independently develop software from idea to implementation. They work with user interfaces, databases, create and maintain application architecture, and ensure cybersecurity. To do this, a Fullstack developer must have a wide range of knowledge and skills, including HTML, CSS, and JavaScript to create the user interface and interact with the client side of the software. A deep understanding of programming languages such as Java, Python, Ruby, or PHP to work with the backend and server logic. Databases such as MySQL and MongoDB for storing and managing data. Frameworks and tools for development, for example: Angular, Node.js, or Django. One of the key skills of a Fullstack programmer is the ability to effectively interact with the team and clients to understand project requirements, discuss them, and propose appropriate solutions.",
+				"subtitle2": "Tasks and responsibilities of a Fullstack developer in IT",
+				"description2": "A Fullstack Developer is a versatile specialist who performs many different tasks. Here are some of them: website and application development. This is the main task of a Fullstack programmer. They write code for Frontend and Backend, create interactive elements, work with databases and servers. Design and planning. A Fullstack developer can participate in the creation of the project architecture, selection of appropriate technologies and tools. User interface development. A Fullstack Developer must work in conjunction with a UI/UX designer and be on the same page with them to create user-friendly interfaces. Work on the server side. Processing requests, working with databases, user authentication, etc. Development of APIs for data exchange between the frontend and the backend. Security. A Fullstack Developer should be aware of possible threats and take measures to protect software from hacking and unauthorised access. Integration of various third-party services. Performance optimisation. Testing and debugging code. Working with version control systems, such as Git. Deploy and manage applications on servers or in the cloud. Updating and maintaining the product as needed.",
+				"subtitle3": "A typical day in the life of a Fullstack developer",
+				"description3": "A Fullstack Developer can start the day by checking emails and scheduling tasks based on their urgency and importance. Then they move on to building the user interface using HTML, CSS, and JavaScript. Or backend development, working with databases and programming languages such as Java or Python. A Fullstack Developer may also encounter problems and bugs that need to be resolved by testing and debugging the code. During the day, a Fullstack Developer participates in various meetings: with the team to discuss project details, with clients to clarify requirements, or with the Project Manager to report on progress. In the evening, they can work on documentation, plan tasks for the next day, or learn something new to keep up with the latest trends and technologies.",
+				"subtitle4": "Fullstack Developer in IT: advantages and disadvantages of the profession",
+				"description4": "The advantages include: Variety of projects. Thanks to a wide range of skills, a Fullstack developer can handle a variety of projects - from simple websites to complex corporate systems. High income. The salary of a Junior Fullstack Developer in Ukraine starts from $980 and rises to $2475 for the middle level and $4750 for the senior level (Dou data, summer 2023). Demand in the labour market. Fullstack programmers are always in demand because they can perform tasks related to both sides of development. This makes them competitive and provides excellent job opportunities. Deep understanding of projects. Working with both front- and back-end allows Fullstack developers to see the big picture and take into account different aspects of the project when making decisions. Self-development and a community of like-minded people. Flexible schedule, remote work, and all the perks of IT companies. Here are the main disadvantages: Great responsibility and high skill requirements. A Fullstack Developer is responsible for all aspects of the project, from design to implementation. The need for constant training. Technologies are changing, and Fullstack developers need to keep up with the latest trends and innovations. This is where curiosity comes in. The risk of overload. A large amount of work and a wide range of responsibilities can lead to burnout and stress. Blurring of specialisation. Compared to programmers who work only with Backend or Frontend, a Fullstack Developer may not be as much of an expert in each area."
+			}
+		},
+
+		{
+			"slug": "why-and-when-to-choose-react-js-development",
+			"date": "16/03/2024",
+			"mainUrl": "images/9/main9.png",
+			"url2": "images/9/1_9.png",
+			"url3": "images/9/2_9.png",
+			"dataUA": {
+				"title": "Чому і коли варто обирати розробку на React JS",
+				"subtitle": "ЩО ТАКЕ REACT",
+				"description": "Цей фреймворк народився у команді Facebook (тепер вже відома як Meta) близько 10 років тому. Найпопулярніша соцмережа світу потребувала розширених можливостей робити з користувацьким інтерфейсом, тож інженер Facebook Джордон Уолк створив прототип бібліотеки, що сьогодні відома як React, або React JS. Технічно, React JS являє собою відкриту JavaScript-бібліотеку для побудови користувацьких інтерфейсів з компонентів UI. Тобто, на React реалізується та частина сайту, з якою користувач безпосередньо взаємодіє через браузер. React робить розробку на фронтенді в рази простішою, дозволяючи створювати інтерактивні елементи, які можна з легкістю повторно використовувати в іншій частині продукту. Тобто, розробнику не потрібно писати код на JS двічі, аби створити дві однакові кнопки різного кольору. У великих проектах таких кнопок можуть бути сотні.",
+				"subtitle2": "ЯКІ ПЕРЕВАГИ НАДАЄ REACT JS У ФРОНТЕНДІ",
+				"description2": "Чому React став таким популярним? Розробники цінують його за низку ключових переваг – перелічимо їх: Доступність. React може швидко опанувати будь-який розробник, що має базові навички у JavaScript. Досвідчені JS-розробники можуть вивчити всі можливості React буквально за кілька вечорів. Гнучкість. Код на React легкий для розуміння та підтримки, а модульна структура робить його гнучким та сумісним з іншими фреймворками. Це економить безліч часу розробників, а відтак скорочує видатки бізнесу. Швидкодія. React був створений аби забезпечити швидку та ефективну роботу фронденду. Ядро фреймворку пропонує віртуальну об’єктну модель документа (virtual DOM) та можливість рендерингу на боці сервера, що дозволяє складним сторінкам і додаткам працювати швидко.  Перевикористання компонентів. Окремі автономні UI-компоненти зв'язують разом код  HTML та JavaScript. Логіка використання компонентів робить розробку наочнішою, покращує якість коду та заощаджує час розробника. Браузерні інструменти. Розробникам доступні безплатні плагіни React development tools під популярні браузери. Ці інструменти дозволяють легко перевірити ієрархію компонентів React та надають низку зручностей для відладки. Величезне ком’юніті. Світова спільнота розробників постійно розвиває фреймворк, створює нові бібліотеки та ділиться досвідом з новачками. Розробники завжди можуть знайти потрібні їм інструменти та інформацію. Крім того, знайти фахівців для проекту на React не складно. ",
+				"subtitle3": "В ЯКИХ ПРОЕКТАХ ВАРТО ЗАСТОСУВАТИ REACT JS",
+				"description3": "Це універсальний фреймворк, в якому акцент зроблено на швидкодії роботи фронтенду. Він ідеально відповідає потребам створення соцмереж, веб-сервісів та односторінкових додатків. Сьогодні левова частка сучасного веб-середовища реалізована на React, або з його допомогою. Природно, що на React працює флагманська соцмережа Meta – Facebook, адже історія цього фреймворка почалась саме там. Команда соцмережі поєднала можливості роботи фронтенду на React з мовою обробки запитів GraphQL, аби забезпечити оновлення даних в реальному часі та стабільність роботи під будь-якими навантаженнями. Найпопулярніший стримінговий сервіс Netflix також побудований за допомогою React. На його користь зіграли модульність, висока швидкодія та стабільність. Відтак користувачі отримують на сайті та в додатку Netflix швидке завантаження екранів та плавний стрімінг. Платформа для запуску онлайн-магазинів Shopify використовує React у своєму сайті та веб-додатку. Крім того, розробники можуть створювати додатки та плагіни для Shopify за допомогою дизайн-системи Polaris. За допомогою React створені сайти IKEA, Uber, Binance, openAI – тобто фреймворк довів свою ефективність у геть різних галузях – від онлайн-комерції та перевезень, до криптофінансів та впровадження засобів ШІ. У своєму досвіді ми успішно застосовували React у складних та нестандартних проектах, що потребували швидких веб-додатків. Одним з останніх кейсів стала розробка системи HR-менеджменту для енергокомпанії – ви можете дізнатися подробиці на нашому сайті. "
+		
+			},
+			"dataEN": {
+				"title": "Why and when to choose React JS development",
+				"subtitle": "WHAT IS REACT",
+				"description": "This framework was born in the Facebook team (now known as Meta) about 10 years ago. The world's most popular social network needed to do more with the user interface, so Facebook engineer Jordon Walk created a prototype of the library that is now known as React, or React JS. Technically, React JS is an open JavaScript library for building user interfaces from UI components. That is, React is used to implement the part of the site with which the user directly interacts through the browser. React makes front-end development many times easier by allowing you to create interactive elements that can be easily reused in another part of the product. That is, a developer doesn't need to write JS code twice to create two identical buttons of different colours. In large projects, there can be hundreds of such buttons.",
+				"subtitle2": "WHAT ARE THE BENEFITS OF REACT JS IN THE FRONTEND",
+				"description2": "Why is React so popular? Developers appreciate it for a number of key advantages - let's list them: Accessibility. Any developer with basic JavaScript skills can quickly learn React. Experienced JS developers can learn all the features of React in just a few evenings. Flexibility. React code is easy to understand and maintain, and its modular structure makes it flexible and compatible with other frameworks. This saves a lot of developer time and thus reduces business costs. Performance. React was created to ensure fast and efficient frontend performance. The core of the framework offers a virtual document object model (virtual DOM) and server-side rendering capabilities, which allows complex pages and applications to run quickly.  Component reuse. Separate standalone UI components link together HTML and JavaScript code. The logic of using components makes development more visual, improves code quality, and saves developer time. Browser tools. React development tools plugins for popular browsers are available for free to developers. These tools allow you to easily check the hierarchy of React components and provide a number of debugging features. Huge community. The global community of developers is constantly developing the framework, creating new libraries, and sharing their experience with newcomers. Developers can always find the tools and information they need. Besides, it is not difficult to find specialists for a React project.",
+				"subtitle3": "WHICH PROJECTS SHOULD USE REACT JS",
+				"description3": "This is a universal framework that focuses on front-end performance. It perfectly meets the needs of creating ocial networks, web services, and single-page applications. Today, the lion's share of modern web environments is implemented in React or with its help. Naturally, Meta's flagship social network, Facebook, is powered by React, as the history of this ramework began there. The social network team has combined React front-end capabilities with the GraphQL query language to nsure real-time data updates and stability under any load. The most popular streaming service Netflix is also built with React. Its modularity, high performance, and stability played in its favour. As a result, users get fast loading screens and smooth streaming on the Netflix website and app. Shopify, a platform for launching online stores, uses React on its website and web application. In addition, developers can create apps and plugins for Shopify using the Polaris design system. IKEA, Uber, Binance, and openAI websites have been built with React, which means that the framework has proven its effectiveness in a wide range of industries - from online commerce and transportation to crypto finance and AI implementation. In our experience, we have successfully applied React to complex and non-standard projects that required fast web applications. One of the most recent cases was the development of an HR management system for an energy company - you can find out more on our website. "
+			}
+		}
+	]
+}
+
