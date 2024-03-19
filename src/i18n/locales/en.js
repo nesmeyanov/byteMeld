@@ -135,6 +135,12 @@ export const en = {
 		},
 	},
 
+	//*** SectionBlog ***/
+	blog: {
+		title: "Blog",
+		read: "read the blog",
+	},
+
 	//*** SectionForma ***/
 	forma: {
 		title: "Let's cooperate",

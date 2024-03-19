@@ -135,6 +135,12 @@ export const uk = {
 		},
 	},
 
+	//*** SectionBlog ***/
+	blog: {
+		title: "Блог",
+		read: "читати блог",
+	},
+
 	//*** SectionForma ***/
 	forma: {
 		title: "Давайте співпрацювати",
