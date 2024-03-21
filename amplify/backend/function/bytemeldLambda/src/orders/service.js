@@ -1,5 +1,6 @@
 class OrdersService {
-  constructor () {
+  constructor (db) {
+    this.db = db;
     this.orders = [];
   }
 
@@ -9,4 +10,4 @@ class OrdersService {
   }
 }
 
-module.exports = new OrdersService();
+module.exports = OrdersService;

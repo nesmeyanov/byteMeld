@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/orders": {
+      "name": "/orders",
+      "lambdaFunction": "bytemeldLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/articles": {
+      "name": "/articles",
+      "lambdaFunction": "bytemeldLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

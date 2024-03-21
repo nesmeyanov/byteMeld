@@ -15,8 +15,11 @@
       "function": {
         "bytemeldLambda": {
           "deploymentBucketName": "amplify-bytemeld-dev-235904-deployment",
-          "s3Key": "amplify-builds/bytemeldLambda-70495a476e304b796d58-build.zip"
+          "s3Key": "amplify-builds/bytemeldLambda-585872724154534b6f45-build.zip"
         }
+      },
+      "api": {
+        "bytemeldAPI": {}
       }
     }
   }

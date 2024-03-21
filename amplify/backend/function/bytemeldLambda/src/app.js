@@ -15,6 +15,8 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
 
 // declare a new express app
 const app = express()
+const router = express.Router();
+
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
@@ -25,7 +27,7 @@ app.use(function(req, res, next) {
   next()
 });
 
-require('./router')(app);
+require('./router')(app, router);
 
 app.listen(3000, function() {
     console.log("App started")

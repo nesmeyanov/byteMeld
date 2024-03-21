@@ -1,4 +1,4 @@
-import { post } from 'aws-amplify/api';
+import { get, post } from 'aws-amplify/api';
 import style from "./forma.module.scss";
 import { Formik, Form } from "formik";
 import { useEffect, useState } from "react";
@@ -11,10 +11,31 @@ import {
 	formaSchemaStaff,
 } from "../../../schemas/formaSchema";
 
+const getArticles = async () => {
+	try {
+		const restCall = get({
+			apiName: 'bytemeldAPI',
+			path: '/articles',
+			options: {
+				queryParams: {
+					amount: 2
+				}
+			}
+		});
+
+		const { body } = await restCall.response;
+		const data = await body.json();
+
+		console.log('request success: ', data);
+	} catch (err) {
+		console.log('request err', err);
+	}
+}
+
 const sendForm = async () => {
 	try {
 		const restCall = post({
-			apiName: 'ordersApi',
+			apiName: 'bytemeldAPI',
 			path: '/orders',
 			options: {
 				body: {
@@ -120,7 +141,7 @@ export function Forma({ t, source, budget, staff }) {
 							detailsErr={formikProps.errors.details}
 						/>
 						<button
-							onClick={sendForm}
+							onClick={getArticles}
 							type="submit"
 							className={style.btn_forma}
 						>

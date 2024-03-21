@@ -1,4 +1,20 @@
 {
+  "api": {
+    "bytemeldAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "bytemeldLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "function": {
     "bytemeldLambda": {
       "build": true,
