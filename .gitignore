@@ -33,7 +33,6 @@ lerna-debug.log*
 # amplify
 node_modules
 .amplify
-amplifyconfiguration*
 
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
@@ -48,7 +47,6 @@ dist/
 node_modules/
 aws-exports.js
 awsconfiguration.json
-amplifyconfiguration.json
 amplifyconfiguration.dart
 amplify-build-config.json
 amplify-gradle-config.json

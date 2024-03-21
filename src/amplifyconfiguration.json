@@ -1,0 +1,10 @@
+{
+  "aws_project_region": "eu-central-1",
+  "aws_cloud_logic_custom": [
+    {
+      "name": "bytemeldAPI",
+      "endpoint": "https://n4feteigq0.execute-api.eu-central-1.amazonaws.com/dev",
+      "region": "eu-central-1"
+    }
+  ]
+}
