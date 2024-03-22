@@ -2,9 +2,13 @@ import { useTranslation } from "react-i18next";
 import style from "./sectionBlog.module.scss";
 import { Link } from "react-router-dom";
 import { BlogItem } from "../BlogItem";
+import { useGetArticlesQuery } from "../../../store/bytemeld/bytemeld.api";
 
 export default function SectionBlog() {
 	const { t } = useTranslation();
+	const { data } = useGetArticlesQuery();
+
+	console.log(data);
 
 	return (
 		<section
