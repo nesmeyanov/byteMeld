@@ -139,6 +139,7 @@ export const en = {
 	blog: {
 		title: "Blog",
 		read: "read the blog",
+		error: "Something went wrong...",
 	},
 
 	//*** SectionForma ***/

@@ -139,6 +139,7 @@ export const uk = {
 	blog: {
 		title: "Блог",
 		read: "читати блог",
+		error: "Щось пішло не так...",
 	},
 
 	//*** SectionForma ***/

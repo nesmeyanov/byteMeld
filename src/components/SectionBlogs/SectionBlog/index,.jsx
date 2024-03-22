@@ -3,10 +3,13 @@ import style from "./sectionBlog.module.scss";
 import { Link } from "react-router-dom";
 import { BlogItem } from "../BlogItem";
 import { useGetArticlesQuery } from "../../../store/bytemeld/bytemeld.api";
+import { Error } from "../../Error";
+import { Loader } from "../../Loader";
+
 
 export default function SectionBlog() {
 	const { t } = useTranslation();
-	const { data } = useGetArticlesQuery();
+	const { data, isError, isLoading } = useGetArticlesQuery();
 
 	console.log(data);
 
@@ -15,13 +18,27 @@ export default function SectionBlog() {
 			id="blog"
 			className={style.wrapperBlog}
 		>
-			<div className="container">
+			<div className={style.container}>
 				<div className={style.header_box}>
 					<h2 className={style.title}>{t("blog.title")}</h2>
-					<Link to="/blog"> {t("blog.read")}</Link>
+					<Link
+						className={style.read}
+						to="/blog"
+					>
+						{" "}
+						{t("blog.read")}
+					</Link>
 				</div>
+
+				{isError && <Error />}
 				<div className={style.blog_box}>
-					<BlogItem />
+					{isLoading && <Loader />}
+					{data?.slice(0, 2).map((article) => (
+						<BlogItem
+							key={article.id}
+							{...article}
+						/>
+					))}
 				</div>
 			</div>
 		</section>

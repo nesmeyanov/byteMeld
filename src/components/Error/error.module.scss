@@ -1,0 +1,14 @@
+.error_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+
+.errpr_title {
+	font-size: 30px;
+	font-family: var(--font-title);
+	font-weight: 700;
+	color: var(--color-text);
+	text-align: center;
+}

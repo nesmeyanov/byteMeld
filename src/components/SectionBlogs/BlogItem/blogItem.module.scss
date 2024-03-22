@@ -1,0 +1,63 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+	background:
+		linear-gradient(0deg, rgba(0, 20, 33, 0.99) 0%, rgba(0, 20, 33, 0.99) 100%),
+		url("../../../assets/images/bg/bg_noise.jpg") lightgray 50% / cover no-repeat;
+	padding: 5px 0px;
+}
+
+.image {
+	position: relative;
+	padding-bottom: 21.8%;
+	flex: 0 1 30%;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.content_box {
+	flex: 0 1 67%;
+	width: 100%;
+	padding: 40px 40px 40px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	// align-items: flex-start;
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	color: var(--color-title);
+	font-family: var(--font-source-code);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 141%;
+	max-height: 144px;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date {
+	color: var(--color-label);
+	font-variant-numeric: slashed-zero;
+	font-family: var(--font-source-code);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+}
