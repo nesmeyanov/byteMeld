@@ -37,6 +37,7 @@ export function ServiceItem({ title, desc, expanded, setExpanded , index}) {
 						<button
 							className={style.cooperation_btn}
 							type="button"
+							data-id={"#contacts"}
 						>
 							{t("services.btn")}
 						</button>

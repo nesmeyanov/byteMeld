@@ -34,7 +34,10 @@ export function Header() {
 	}, [isOpenBurgerMenu]);
 
 	return (
-		<header className={style.header}>
+		<header
+			id="header"
+			className={style.header}
+		>
 			<div className={style.container}>
 				<Link
 					{...(location.pathname !== "/" && { to: "/" })}
@@ -56,7 +59,12 @@ export function Header() {
 							className={style.btn_link}
 							{...(location.pathname !== "/" && { to: "/" })}
 						>
-							<button className={style.btn_header}>{t("header.btn")}</button>
+							<button
+								data-id={"#contacts"}
+								className={style.btn_header}
+							>
+								{t("header.btn")}
+							</button>
 						</Link>
 					) : (
 						<Burger

@@ -4,6 +4,7 @@ export const en = {
 		menu: {
 			home: {
 				title: "Home",
+				anchor: "#header",
 			},
 			about: {
 				title: "About us",
@@ -17,10 +18,10 @@ export const en = {
 				title: "Portfolio",
 				anchor: "#portfolio",
 			},
-			reviews: {
-				title: "Reviews",
-				anchor: "#reviews",
-			},
+			// reviews: {
+			// 	title: "Reviews",
+			// 	anchor: "#reviews",
+			// },
 			blog: {
 				title: "Blog",
 				anchor: "#blog",
@@ -191,6 +192,7 @@ export const en = {
 		menu: {
 			home: {
 				title: "Home",
+				anchor: "#header",
 			},
 			about: {
 				title: "About us",
@@ -204,10 +206,10 @@ export const en = {
 				title: "Portfolio",
 				anchor: "#portfolio",
 			},
-			reviews: {
-				title: "Reviews",
-				anchor: "#reviews",
-			},
+			// reviews: {
+			// 	title: "Reviews",
+			// 	anchor: "#reviews",
+			// },
 			blog: {
 				title: "Blog",
 				anchor: "#blog",

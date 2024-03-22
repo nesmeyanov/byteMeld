@@ -4,6 +4,7 @@ export const uk = {
 		menu: {
 			home: {
 				title: "Головна",
+				anchor: "#header",
 			},
 			about: {
 				title: "Про нас",
@@ -17,10 +18,10 @@ export const uk = {
 				title: "Портфоліо",
 				anchor: "#portfolio",
 			},
-			reviews: {
-				title: "Відгуки",
-				anchor: "#reviews",
-			},
+			// reviews: {
+			// 	title: "Відгуки",
+			// 	anchor: "#reviews",
+			// },
 			blog: {
 				title: "Блог",
 				anchor: "#blog",
@@ -191,6 +192,7 @@ export const uk = {
 		menu: {
 			home: {
 				title: "Головна",
+				anchor: "#header",
 			},
 			about: {
 				title: "Про нас",
@@ -204,10 +206,10 @@ export const uk = {
 				title: "Портфоліо",
 				anchor: "#portfolio",
 			},
-			reviews: {
-				title: "Відгуки",
-				anchor: "#reviews",
-			},
+			// reviews: {
+			// 	title: "Відгуки",
+			// 	anchor: "#reviews",
+			// },
 			blog: {
 				title: "Блог",
 				anchor: "#blog",
