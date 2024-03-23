@@ -35,24 +35,22 @@
 }
 
 .date {
-color: var(--color-date);
-
-font-size: 16px;
-font-weight: 400;
-line-height: 175%; 
+	color: var(--color-date);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 175%;
 }
 
 .title {
 	color: var(--color-blog);
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 141%;
-height: 136px;
-overflow: hidden;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 141%;
+	height: 136px;
+	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 4; /* Відображення тільки трьох рядків тексту */
 	-webkit-box-orient: vertical;
 }
-
