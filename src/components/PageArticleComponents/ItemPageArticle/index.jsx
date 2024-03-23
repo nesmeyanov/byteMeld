@@ -1,18 +1,21 @@
 import style from "./itemPageArticle.module.scss"
+import { formatDate } from "../../../utils/helpers";
 
-export function ItemPageArticle({ ...article }) {
+export function ItemPageArticle({ title, date, thumbnail, blocks }) {
+
 	return (
 		<div className={style.wrapper}>
-			<div className={style.image}>
-				<img
-					src={article.thumbnail}
-					alt={article.title}
-				/>
-			</div>
-			<div className={style.content_box}>
-				{/* <span className={style.date}>{formatDate(article.date)}</span> */}
-				<h3 className={style.title}>{article.title}</h3>
-				<p className={style.description}>{article.description}</p>
+			<div className={style.main_box}>
+				<div className={style.image}>
+					<img
+						src={thumbnail}
+						alt={title}
+					/>
+				</div>
+				<div className={style.content_box}>
+					<span className={style.date}>{formatDate(date)}</span>
+					<h3 className={style.title}>{title}</h3>
+				</div>
 			</div>
 		</div>
 	);

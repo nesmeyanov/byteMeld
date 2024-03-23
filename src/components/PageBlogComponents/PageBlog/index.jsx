@@ -6,8 +6,8 @@ import { Error } from "../../Error";
 import { Loader } from "../../Loader";
 
 export default function PageBlog() {
-	const {t} = useTranslation();
-		const { data, isError, isLoading } = useGetArticlesQuery();
+	const { t } = useTranslation();
+	const { data, isError, isLoading } = useGetArticlesQuery();
 
 	return (
 		<section className={style.wrapper}>
