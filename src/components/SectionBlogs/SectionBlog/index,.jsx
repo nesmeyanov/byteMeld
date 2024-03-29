@@ -15,7 +15,8 @@ export default function SectionBlog() {
 		locale: i18n.language,
 	});
 
-	console.log(data);
+	const articles = data?.articles;
+	console.log(articles);
 
 	return (
 		<section
@@ -37,7 +38,7 @@ export default function SectionBlog() {
 				{isError && <Error />}
 				<div className={style.blog_box}>
 					{isLoading && <Loader />}
-					{data?.map((article) => (
+					{articles?.map((article) => (
 						<BlogItem
 							key={article._id}
 							{...article}
