@@ -6,7 +6,7 @@ import { en } from "./locales/en.js";
 import { LOCALS } from "./constants";
 
 const resources = {
-	[LOCALS.UK]: {
+	[LOCALS.UA]: {
 		translation: uk,
 	},
 	[LOCALS.EN]: {
@@ -19,7 +19,7 @@ i18n
 	.use(Languagedetector)
 	.init({
 		resources,
-		lng: LOCALS.UK,
+		lng: LOCALS.UA,
 		interpolation: {
 			escapeValue: false,
 		},

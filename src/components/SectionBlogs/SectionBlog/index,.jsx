@@ -8,8 +8,12 @@ import { Loader } from "../../Loader";
 
 
 export default function SectionBlog() {
-	const { t } = useTranslation();
-	const { data, isError, isLoading } = useGetArticlesQuery();
+	const { t, i18n } = useTranslation();
+	const { data, isError, isLoading } = useGetArticlesQuery({
+		limit: 2,
+		offset: 0,
+		locale: i18n.language,
+	});
 
 	console.log(data);
 
@@ -33,9 +37,9 @@ export default function SectionBlog() {
 				{isError && <Error />}
 				<div className={style.blog_box}>
 					{isLoading && <Loader />}
-					{data?.slice(0, 2).map((article) => (
+					{data?.map((article) => (
 						<BlogItem
-							key={article.id}
+							key={article._id}
 							{...article}
 						/>
 					))}

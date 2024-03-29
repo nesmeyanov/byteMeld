@@ -7,8 +7,10 @@ export const bytemeldApi = createApi({
 	}),
 	endpoints: (build) => ({
 		getArticles: build.query({
-			query: () => ({
-				url: `articles?amount=2`,
+			query: ({ limit = 2, offset = 0, locale = "en" }) => ({
+			url: `articles?limit=${limit}&offset=${offset}&locale=${locale}`,
+			// query: () => ({
+			// 	url: `articles?limit=6&offset=0&locale=en`,
 			}),
 			transformResponse: (response) => response.articles,
 		}),

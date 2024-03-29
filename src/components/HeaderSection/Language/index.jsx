@@ -16,7 +16,7 @@ export function Language() {
 	};
 
 	const languages = [
-		{ code: LOCALS.UK, name: "UA" },
+		{ code: LOCALS.UA, name: "UA" },
 		{ code: LOCALS.EN, name: "EN" },
 	];
 

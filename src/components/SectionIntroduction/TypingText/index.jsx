@@ -6,7 +6,7 @@ import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
 export function TypingText() {
-	const langUA = i18next.language === LOCALS.UK;
+	const langUA = i18next.language === LOCALS.UA;
 
 	const { t } = useTranslation();
 	const text = t("intro.text");
