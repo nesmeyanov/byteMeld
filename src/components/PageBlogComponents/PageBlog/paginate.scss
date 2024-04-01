@@ -5,6 +5,10 @@
 	align-items: center;
 	font-size: 1.2rem;
 	gap: 5px;
+
+	@media (max-width: 560px) {
+		font-size: 1rem;
+	}
 }
 
 .pagination .page-num {
@@ -40,9 +44,17 @@
 .pagination .previous {
 	margin-right: 8px;
 	font-size: 26px;
+
+	@media (max-width: 560px) {
+		font-size: 24px;
+	}
 }
 
 .pagination .next {
 	margin-left: 8px;
 	font-size: 26px;
+
+	@media (max-width: 560px) {
+		font-size: 24px;
+	}
 }

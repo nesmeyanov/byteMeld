@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 export default function PageBlog() {
 	const [pageCount, setPageCount] = useState(0);
 	const [itemOffset, setItemOffset] = useState(0);
-	const itemsPerPage = 3;
+	const itemsPerPage = 6;
 
 	const { t, i18n } = useTranslation();
 	const { data, isError, isLoading } = useGetArticlesQuery({
@@ -39,15 +39,18 @@ export default function PageBlog() {
 			</div>
 
 			{isError && <Error />}
-			<div className={style.blog_box}>
-				{isLoading && <Loader />}
-				{articles?.map((article) => (
-					<ItemPageBlog
-						key={article._id}
-						{...article}
-					/>
-				))}
+			<div className={style.blog_wrapper}>
+				<div className={style.blog_container}>
+					{isLoading && <Loader />}
+					{articles?.map((article) => (
+						<ItemPageBlog
+							key={article._id}
+							{...article}
+						/>
+					))}
+				</div>
 			</div>
+
 			<div className={style.paginate_box}>
 				<ReactPaginate
 					breakLabel="..."
