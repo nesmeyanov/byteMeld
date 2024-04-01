@@ -16,7 +16,7 @@ export function PageArticle() {
 
 	return (
 		<section className={style.wrapper}>
-			<div className={style.container}>
+			<div className={`${style.container} ${isError && style.error}`}>
 				{isError && <Error />}
 				{isLoading && <Loader />}
 				<div className={style.article_body}>
@@ -31,7 +31,7 @@ export function PageArticle() {
 						</span>
 						<span className={style.title}>{selectedArticle?.title}</span>
 					</div>
-					< ItemPageArticle {...selectedArticle}/>
+					<ItemPageArticle {...selectedArticle} />
 				</div>
 			</div>
 		</section>
