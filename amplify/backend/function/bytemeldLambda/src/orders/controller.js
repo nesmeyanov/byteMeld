@@ -6,9 +6,9 @@ class OrdersController {
   }
 
   async saveOrder (req, res) {
-    await this.service.saveOrder(req.body);
+    const order = await this.service.saveOrder(req.body);
 
-    res.json({success: 'post call succeed!', url: req.originalUrl });
+    res.json({ status: 'OK', order });
   }
 }
 

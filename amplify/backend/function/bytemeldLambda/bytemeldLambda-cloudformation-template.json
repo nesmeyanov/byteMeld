@@ -15,6 +15,18 @@
     },
     "s3Key": {
       "Type": "String"
+    },
+    "dbPassword": {
+      "Type": "String"
+    },
+    "dbHost": {
+      "Type": "String"
+    },
+    "dbPort": {
+      "Type": "String"
+    },
+    "dbUsername": {
+      "Type": "String"
     }
   },
   "Conditions": {
@@ -69,6 +81,18 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
+            },
+            "DB_PASSWORD": {
+              "Ref": "dbPassword"
+            },
+            "DB_HOST": {
+              "Ref": "dbHost"
+            },
+            "DB_PORT": {
+              "Ref": "dbPort"
+            },
+            "DB_USERNAME": {
+              "Ref": "dbUsername"
             }
           }
         },
@@ -79,8 +103,20 @@
           ]
         },
         "Runtime": "nodejs18.x",
-        "Layers": [],
-        "Timeout": 25
+        "Layers": [
+          "arn:aws:lambda:eu-central-1:211125631501:layer:CertsLayer:1"
+        ],
+        "Timeout": 25,
+        "VpcConfig": {
+          "SecurityGroupIds": [
+            "sg-0ed3aa2066b55750a"
+          ],
+          "SubnetIds": [
+            "subnet-07d00b9cac51e2a2b",
+            "subnet-0b908325eb1a5f14f",
+            "subnet-0ab2bd41436928a6c"
+          ]
+        }
       }
     },
     "LambdaExecutionRole": {
@@ -160,6 +196,16 @@
                   }
                 ]
               }
+            },
+            {
+              "Effect": "Allow",
+              "Action": [
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DetachNetworkInterface",
+                "ec2:DeleteNetworkInterface"
+              ],
+              "Resource": "*"
             }
           ]
         }
