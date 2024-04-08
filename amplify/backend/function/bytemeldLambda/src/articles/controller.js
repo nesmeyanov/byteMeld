@@ -21,9 +21,15 @@ class ArticlesController {
   }
 
   async getArticles (req, res) {
-    const articles = await this.service.getArticles();
+    const result = await this.service.getArticles(req.query);
 
-    res.json({success: 'get call succeed!', url: req.originalUrl, articles });
+    res.json({ status: 'OK', ...result });
+  }
+
+  async getOneArticle (req, res) {
+    const article = await this.service.getOneArticle(req.query, req.params);
+
+    res.json({ status: 'OK', article });
   }
 }
 
@@ -31,6 +37,7 @@ module.exports = function(router, dbService) {
   const service = new ServiceClass(dbService);
   const controller = new ArticlesController(service);
 
+  router.get('/:slug', controller.getOneArticle.bind(controller));
   router.get('/', controller.getArticles.bind(controller));
 
   return router;

@@ -18,11 +18,44 @@
   "function": {
     "bytemeldLambda": {
       "build": true,
+      "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
+    "AMPLIFY_function_bytemeldLambda_dbHost": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "bytemeldLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_bytemeldLambda_dbPassword": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "bytemeldLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_bytemeldLambda_dbPort": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "bytemeldLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_bytemeldLambda_dbUsername": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "bytemeldLambda"
+        }
+      ]
+    },
     "AMPLIFY_function_bytemeldLambda_deploymentBucketName": {
       "usedBy": [
         {

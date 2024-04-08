@@ -15,7 +15,11 @@
       "function": {
         "bytemeldLambda": {
           "deploymentBucketName": "amplify-bytemeld-dev-235904-deployment",
-          "s3Key": "amplify-builds/bytemeldLambda-585872724154534b6f45-build.zip"
+          "s3Key": "amplify-builds/bytemeldLambda-7a336837773137492b47-build.zip",
+          "dbPassword": "{{resolve:secretsmanager:bytemeld/DocumentDB-creds:SecretString:password}}",
+          "dbHost": "{{resolve:secretsmanager:bytemeld/DocumentDB-creds:SecretString:host}}",
+          "dbPort": "{{resolve:secretsmanager:bytemeld/DocumentDB-creds:SecretString:port}}",
+          "dbUsername": "{{resolve:secretsmanager:bytemeld/DocumentDB-creds:SecretString:username}}"
         }
       },
       "api": {
