@@ -16,7 +16,6 @@ export default function SectionBlog() {
 	});
 
 	const articles = data?.articles;
-	console.log(articles);
 
 	return (
 		<section
@@ -40,7 +39,7 @@ export default function SectionBlog() {
 					{isLoading && <Loader />}
 					{articles?.map((article) => (
 						<BlogItem
-							key={article._id}
+							key={article.id}
 							{...article}
 						/>
 					))}
