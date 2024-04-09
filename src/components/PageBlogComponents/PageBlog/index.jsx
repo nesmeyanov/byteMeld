@@ -44,7 +44,7 @@ export default function PageBlog() {
 					{isLoading && <Loader />}
 					{articles?.map((article) => (
 						<ItemPageBlog
-							key={article._id}
+							key={article.id}
 							{...article}
 						/>
 					))}
