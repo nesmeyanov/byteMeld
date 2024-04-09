@@ -1,4 +1,4 @@
-import{createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const bytemeldApi = createApi({
 	reducerPath: "bytemeldApi",
@@ -19,6 +19,7 @@ export const bytemeldApi = createApi({
 			query: ({ slug, locale = "ua" }) => ({
 				url: `articles/${slug}?locale=${locale}`,
 			}),
+			transformResponse: (response) => response.article,
 		}),
 	}),
 });

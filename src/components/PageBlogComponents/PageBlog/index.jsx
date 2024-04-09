@@ -39,7 +39,7 @@ export default function PageBlog() {
 			</div>
 
 			{isError && <Error />}
-			<div className={style.blog_wrapper}>
+			<div className={`${style.blog_wrapper} ${isLoading && style.load}`}>
 				<div className={style.blog_container}>
 					{isLoading && <Loader />}
 					{articles?.map((article) => (

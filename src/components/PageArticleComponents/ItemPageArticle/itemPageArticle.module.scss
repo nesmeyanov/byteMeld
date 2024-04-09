@@ -40,6 +40,18 @@
 	font-family: var(--font-source-code);
 	gap: 20px;
 	padding: 0px 117px;
+
+	@media (max-width: 991px) {
+		padding: 0px 50px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0px 20px;
+	}
+
+	@media (max-width: 560px) {
+		padding: 0px 10px;
+	}
 }
 
 .date {
@@ -73,6 +85,18 @@
 	gap: 20px;
 	padding: 0px 117px;
 	color: var(--color-blog);
+
+	@media (max-width: 991px) {
+		padding: 0px 50px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0px 20px;
+	}
+
+	@media (max-width: 560px) {
+		padding: 0px 10px;
+	}
 }
 
 .subtitle {

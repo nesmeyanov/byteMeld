@@ -1,18 +1,25 @@
 import style from "./pageArticle.module.scss";
 import { useParams, Link } from "react-router-dom";
-import { useGetArticlesQuery } from "../../../store/bytemeld/bytemeld.api";
+import { useGetArticleBySlugQuery } from "../../../store/bytemeld/bytemeld.api";
 import { Error } from "../../Error";
 import { Loader } from "../../Loader";
 import { ItemPageArticle } from "../ItemPageArticle";
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "../../Icons";
+import { useEffect } from "react";
+import { scrollUpPage } from "../../../utils/helpers";
 
 export function PageArticle() {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 	const { slug } = useParams();
-	const { data, isError, isLoading } = useGetArticlesQuery();
+	const { data, isError, isLoading } = useGetArticleBySlugQuery({
+		slug,
+		locale: i18n.language,
+	});
 
-	const selectedArticle = data && data.find((article) => article.slug === slug);
+	useEffect(() => {
+		scrollUpPage();
+	}, []);
 
 	return (
 		<section className={style.wrapper}>
@@ -29,9 +36,9 @@ export function PageArticle() {
 								height={24}
 							/>
 						</span>
-						<span className={style.title}>{selectedArticle?.title}</span>
+						<span className={style.title}>{data?.title}</span>
 					</div>
-					<ItemPageArticle {...selectedArticle} />
+					<ItemPageArticle {...data} />
 				</div>
 			</div>
 		</section>
