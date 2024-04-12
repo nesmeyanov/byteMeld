@@ -16,6 +16,12 @@
     }
   },
   "function": {
+    "DatabaseLambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "bytemeldLambda": {
       "build": true,
       "dependsOn": [],
@@ -24,39 +30,63 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_bytemeldLambda_dbHost": {
+    "AMPLIFY_function_DatabaseLambda_dbHost": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "bytemeldLambda"
+          "resourceName": "DatabaseLambda"
         }
       ]
     },
-    "AMPLIFY_function_bytemeldLambda_dbPassword": {
+    "AMPLIFY_function_DatabaseLambda_dbPassword": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "bytemeldLambda"
+          "resourceName": "DatabaseLambda"
         }
       ]
     },
-    "AMPLIFY_function_bytemeldLambda_dbPort": {
+    "AMPLIFY_function_DatabaseLambda_dbPort": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "bytemeldLambda"
+          "resourceName": "DatabaseLambda"
         }
       ]
     },
-    "AMPLIFY_function_bytemeldLambda_dbUsername": {
+    "AMPLIFY_function_DatabaseLambda_dbUsername": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "bytemeldLambda"
+          "resourceName": "DatabaseLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_DatabaseLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "DatabaseLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_DatabaseLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "DatabaseLambda"
         }
       ]
     },
     "AMPLIFY_function_bytemeldLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "bytemeldLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_bytemeldLambda_mailboxPassword": {
       "usedBy": [
         {
           "category": "function",

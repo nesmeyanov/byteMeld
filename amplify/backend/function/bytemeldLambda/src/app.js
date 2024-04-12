@@ -29,6 +29,14 @@ app.use(function(req, res, next) {
 
 require('./router')(app, router);
 
+app.use((err, req, res, next) => {
+  // Global error handler
+  console.log('GLOBAL ERROR', err);
+  return res.status(500).json({
+    message: err.message,
+  });
+})
+
 app.listen(3000, function() {
   console.log("App started")
 });

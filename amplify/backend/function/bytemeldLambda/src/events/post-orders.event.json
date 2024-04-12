@@ -4,5 +4,5 @@
   "headers": {
     "Content-Type": "application/json"
   },
-  "body": "{\"test\":\"Test order saved\"}"
+  "body": "{\"typeService\":\"аутсорс\",\"fullName\":\"Fred\",\"email\":\"test@gmail.com\",\"details\":\"test\",\"services\":\"Багатосторінковий сайт під ключ\",\"budget\":\"більше 10к\"}"
 }

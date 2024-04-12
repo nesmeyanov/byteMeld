@@ -16,7 +16,16 @@
     "s3Key": {
       "Type": "String"
     },
-    "mailboxPassword": {
+    "dbHost": {
+      "Type": "String"
+    },
+    "dbUsername": {
+      "Type": "String"
+    },
+    "dbPassword": {
+      "Type": "String"
+    },
+    "dbPort": {
       "Type": "String"
     }
   },
@@ -50,12 +59,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "bytemeldLambda",
+            "DatabaseLambda",
             {
               "Fn::Join": [
                 "",
                 [
-                  "bytemeldLambda",
+                  "DatabaseLambda",
                   "-",
                   {
                     "Ref": "env"
@@ -73,8 +82,17 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
-            "MAILBOX_PASSWORD": {
-              "Ref": "mailboxPassword"
+            "DB_HOST": {
+              "Ref": "dbHost"
+            },
+            "DB_USERNAME": {
+              "Ref": "dbUsername"
+            },
+            "DB_PASSWORD": {
+              "Ref": "dbPassword"
+            },
+            "DB_PORT": {
+              "Ref": "dbPort"
             }
           }
         },
@@ -88,7 +106,17 @@
         "Layers": [
           "arn:aws:lambda:eu-central-1:211125631501:layer:CertsLayer:1"
         ],
-        "Timeout": 25
+        "Timeout": 25,
+        "VpcConfig": {
+          "SecurityGroupIds": [
+            "sg-0ed3aa2066b55750a"
+          ],
+          "SubnetIds": [
+            "subnet-07d00b9cac51e2a2b",
+            "subnet-0b908325eb1a5f14f",
+            "subnet-0ab2bd41436928a6c"
+          ]
+        }
       }
     },
     "LambdaExecutionRole": {
@@ -97,12 +125,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "bytemeldLambdaRoled89fa074",
+            "bytemeldLambdaRolee5314e4d",
             {
               "Fn::Join": [
                 "",
                 [
-                  "bytemeldLambdaRoled89fa074",
+                  "bytemeldLambdaRolee5314e4d",
                   "-",
                   {
                     "Ref": "env"
@@ -172,7 +200,10 @@
             {
               "Effect": "Allow",
               "Action": [
-                "lambda:InvokeFunction"
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DetachNetworkInterface",
+                "ec2:DeleteNetworkInterface"
               ],
               "Resource": "*"
             }

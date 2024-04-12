@@ -1,0 +1,16 @@
+{
+  "operations": [{
+    "collection": "articles",
+    "type": "find",
+    "options": {
+      "limit": 10,
+      "offset": 0,
+      "filters": {
+        "locale": "en"
+      },
+      "sort": {
+        "date": -1
+      }
+    }
+  }]
+}

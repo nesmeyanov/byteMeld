@@ -1,15 +1,20 @@
 class OrdersService {
   collectionName = 'orders';
 
-  constructor (db) {
+  constructor (db, mailer) {
     this.db = db;
+    this.mailer = mailer;
   }
 
   async saveOrder(order) {
-    console.log('save order', order);
-    const result = await this.db.insertOne(this.collectionName, order);
+    await this.mailer.sendEmail({
+      from: 'no-reply@bytemeld.net',
+      to: 'sales@bytemeld.net',
+      subject: 'New Order Received',
+      text: `New order received with such data: ${JSON.stringify(order)}`,
+    });
 
-    console.log('SAVE ORDER', result);
+    const result = await this.db.insertOne(this.collectionName, order);
 
     return order;
   }

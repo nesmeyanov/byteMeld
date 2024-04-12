@@ -21,15 +21,33 @@ class ArticlesController {
   }
 
   async getArticles (req, res) {
-    const result = await this.service.getArticles(req.query);
+    try {
+      const result = await this.service.getArticles(req.query);
 
-    res.json({ status: 'OK', ...result });
+      res.json({ status: 'OK', ...result });
+    } catch (err) {
+      console.log('[getArticles]', err);
+
+      return res.status(500).json({
+        event: 'getArticles',
+        message: err.message,
+      })
+    }
   }
 
   async getOneArticle (req, res) {
-    const article = await this.service.getOneArticle(req.query, req.params);
+    try {
+      const article = await this.service.getOneArticle(req.query, req.params);
 
-    res.json({ status: 'OK', article });
+      res.json({ status: 'OK', article });
+    } catch (err) {
+      console.log('[getOneArticle]', err);
+
+      return res.status(500).json({
+        event: 'getOneArticle',
+        message: err.message,
+      })
+    }
   }
 }
 
