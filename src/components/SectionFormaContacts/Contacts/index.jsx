@@ -9,7 +9,7 @@ export function Contacts({t}) {
 				{listLinks?.map((item, index) => (
 					<li key={index} className={style.item}>
 						<span>{item.title}</span>
-						<a href={item.link} target="_blank" rel="noreferrer">{item.link}</a>
+						<a href={item.url} target="_blank" rel="noreferrer">{item.link}</a>
 					</li>
 				))}
 			</ul>

@@ -1,21 +1,25 @@
 export const listLinks = [
 	{
 		title: "Mail",
-		link: "byte.meld@mail.com",
+		link: "sales@bytemeld.net",
+		url: "mailto:sales@bytemeld.net",
 	},
 
 	{
 		title: "Telegram",
-		link: "t.me/bytemeld",
+		link: "t.me/bytemeld_it",
+		url: "http://t.me/bytemeld_it",
 	},
 
 	{
 		title: "LinkedIn",
-		link: "in/byte_meld",
+		link: "LinkedIn/ByteMeld",
+		url: "https://www.linkedin.com/company/bytemeld/",
 	},
 
 	{
-		title: "Other",
-		link: "link/other",
+		title: "DOU",
+		link: "DOU/ByteMeld",
+		url: "https://jobs.dou.ua/companies/bytemeld",
 	},
 ];
