@@ -7,3 +7,4 @@ export { borderAnimation } from "./introAnimation";
 export { bodyAnimation } from "./serviceAnimation";
 export { hiddenAnimation } from "./serviceAnimation";
 export { buttonAnimation } from "./buttonToTop";
+export { notifAnimation } from "./notificationAnimation";

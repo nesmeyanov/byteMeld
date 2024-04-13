@@ -1,4 +1,4 @@
-import {  post } from 'aws-amplify/api';
+import { post } from "aws-amplify/api";
 import style from "./forma.module.scss";
 import { Formik, Form } from "formik";
 import { useEffect, useState } from "react";
@@ -10,6 +10,8 @@ import {
 	formaSchemaSource,
 	formaSchemaStaff,
 } from "../../../schemas/formaSchema";
+import { NotificationPopup } from "../NotificationPopup";
+import { AnimatePresence } from "framer-motion";
 
 export function Forma({ t, source, budget, staff }) {
 	const [isStaff, setIsStaff] = useState(false);
@@ -37,6 +39,8 @@ export function Forma({ t, source, budget, staff }) {
 		setSelectedBudget(t("forma.budget.option3"));
 		setSelectedService(t("forma.source.option2"));
 	}, [t, isStaff]);
+
+	const [showNotification, setShowNotification] = useState(false);
 
 	return (
 		<div className={style.container_forma}>
@@ -72,6 +76,7 @@ export function Forma({ t, source, budget, staff }) {
 						const data = await body.json();
 
 						console.log("request success: ", data);
+						setShowNotification(true);
 					} catch (err) {
 						console.log("request err", err);
 					}
@@ -116,12 +121,20 @@ export function Forma({ t, source, budget, staff }) {
 							detailsErr={formikProps.errors.details}
 						/>
 						<button
-							// onClick={getArticles}
 							type="submit"
 							className={style.btn_forma}
 						>
 							{t("forma.btn")}
 						</button>
+
+						<AnimatePresence>
+							{showNotification && (
+								<NotificationPopup
+									onClose={() => setShowNotification(false)}
+									t={t}
+								/>
+							)}
+						</AnimatePresence>
 					</Form>
 				)}
 			</Formik>
