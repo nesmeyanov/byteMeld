@@ -2,7 +2,6 @@ import style from "../Forma/forma.module.scss";
 import { Field } from "formik";
 
 export function FormaInputFields({ t, fullNameErr, emailErr, detailsErr }) {
-
 	return (
 		<div className={style.input_box}>
 			<label

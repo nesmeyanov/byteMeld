@@ -87,7 +87,10 @@ export function Forma({ t, source, budget, staff }) {
 				}}
 			>
 				{(formikProps) => (
-					<Form className={style.form}>
+					<Form
+						className={style.form}
+						noValidate
+					>
 						<FormaTypesServicesFields
 							t={t}
 							isStaff={isStaff}
@@ -110,15 +113,21 @@ export function Forma({ t, source, budget, staff }) {
 							<FormaOutstafFields
 								t={t}
 								staff={staff}
-								staffErr={formikProps.errors.staff}
+								staffErr={
+									formikProps.submitCount > 0 && formikProps.errors.staff
+								}
 							/>
 						)}
 
 						<FormaInputFields
 							t={t}
-							fullNameErr={formikProps.errors.fullName}
-							emailErr={formikProps.errors.email}
-							detailsErr={formikProps.errors.details}
+							fullNameErr={
+								formikProps.submitCount > 0 && formikProps.errors.fullName
+							}
+							emailErr={formikProps.submitCount > 0 && formikProps.errors.email}
+							detailsErr={
+								formikProps.submitCount > 0 && formikProps.errors.details
+							}
 						/>
 						<button
 							type="submit"
