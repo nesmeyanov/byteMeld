@@ -1,4 +1,5 @@
 const { LambdaClient, InvokeCommand } = require('@aws-sdk/client-lambda');
+const operations = require('./operations');
 
 const client = new LambdaClient({ region: process.env.REGION });
 
@@ -7,6 +8,32 @@ const invocationType = 'RequestResponse';
 const logType = 'Tail';
 
 class DBLambda {
+  operations = operations
+
+  async #invokeLambda(payload) {
+    const input = {
+      FunctionName: functionName, // required
+      InvocationType: invocationType,
+      LogType: logType,
+      Payload: Buffer.from(JSON.stringify(payload)),
+    };
+    
+    const command = new InvokeCommand(input);
+    
+    const response = await client.send(command);
+    const json = JSON.parse(Buffer.from(response.Payload).toString());
+    
+    return json.body;
+  }
+  
+  async multi(...operations) {
+    const payload = { operations };
+
+    const result = await this.#invokeLambda(payload);
+
+    return result;
+  }
+
   async find(collectionName, {
     limit = 10,
     offset = 0,
@@ -14,111 +41,57 @@ class DBLambda {
     sort
   }) {
     const payload = {
-      operations: [{
-        collection: collectionName,
-        type: 'find',
-        options: {
-          limit,
-          offset,
-          filters,
-          sort,
-        }
-      }]
+      operations: [this.operations.findOperation(collectionName, {
+        limit,
+        offset,
+        filters,
+        sort,
+      })]
     }
 
-    const input = {
-      FunctionName: functionName, // required
-      InvocationType: invocationType,
-      LogType: logType,
-      Payload: Buffer.from(JSON.stringify(payload)),
-    };
+    const [result] = await this.#invokeLambda(payload);
 
-    const command = new InvokeCommand(input);
-
-    const response = await client.send(command);
-    const json = JSON.parse(Buffer.from(response.Payload).toString());
-
-    return json.body;
+    return result;
   }
 
   async count(collectionName, {
     filters
   }) {
     const payload = {
-      operations: [{
-        collection: collectionName,
-        type: 'count',
-        options: {
-          filters,
-        }
-      }]
+      operations: [this.operations.countOperation(collectionName, {
+        filters
+      })]
     }
 
-    const input = {
-      FunctionName: functionName, // required
-      InvocationType: invocationType,
-      LogType: logType,
-      Payload: Buffer.from(JSON.stringify(payload)),
-    };
+    const [result] = await this.#invokeLambda(payload);
 
-    const command = new InvokeCommand(input);
-
-    const response = await client.send(command);
-    const json = JSON.parse(Buffer.from(response.Payload).toString());
-
-    return json.body;
+    return result;
   }
 
   async findOne(collectionName, {
     filters
   }) {
     const payload = {
-      operations: [{
-        collection: collectionName,
-        type: 'findOne',
-        options: {
-          filters,
-        }
-      }]
+      operations: [this.operations.findOneOperation(collectionName, {
+        filters
+      })]
     }
 
-    const input = {
-      FunctionName: functionName, // required
-      InvocationType: invocationType,
-      LogType: logType,
-      Payload: Buffer.from(JSON.stringify(payload)),
-    };
+    const [result] = await this.#invokeLambda(payload);
 
-    const command = new InvokeCommand(input);
-
-    const response = await client.send(command);
-    const json = JSON.parse(Buffer.from(response.Payload).toString());
-
-    return json.body;
+    return result;
   }
 
   async insertOne(collectionName, item) {
     const payload = {
-      operations: [{
-        collection: collectionName,
-        type: 'insertOne',
-        item,
-      }]
+      operations: [this.operations.insertOneOperation(collectionName, {
+        item
+      })]
     }
 
-    const input = {
-      FunctionName: functionName, // required
-      InvocationType: invocationType,
-      LogType: logType,
-      Payload: Buffer.from(JSON.stringify(payload)),
-    };
+    const [result] = await this.#invokeLambda(payload);
 
-    const command = new InvokeCommand(input);
-
-    const response = await client.send(command);
-    const json = JSON.parse(Buffer.from(response.Payload).toString());
-
-    return json.data;
+    return result;
   }
 };
 
