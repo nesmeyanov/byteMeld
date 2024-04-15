@@ -1,6 +1,7 @@
 const ServiceClass = require('./service');
 const mailer = require('../mailer');
 const Validation = require('../middlewares/validation');
+const limiter = require('../middlewares/limiter');
 const OrderSchema = require('./schemas/order.schema');
 
 const validation = new Validation(OrderSchema);
@@ -30,7 +31,7 @@ module.exports = function(router, dbService) {
   const service = new ServiceClass(dbService, mailer);
   const controller = new OrdersController(service);
 
-  router.post('/', validation.validateAsync.bind(validation), controller.saveOrder.bind(controller));
+  router.post('/', limiter, validation.validateAsync.bind(validation), controller.saveOrder.bind(controller));
 
   return router;
 };

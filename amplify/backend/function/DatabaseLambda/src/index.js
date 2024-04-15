@@ -50,6 +50,6 @@ exports.handler = async (event) => {
     //      "Access-Control-Allow-Origin": "*",
     //      "Access-Control-Allow-Headers": "*"
     //  },
-        body: results[0],
+        body: results,
     };
 };

@@ -11,8 +11,8 @@ class ArticlesService {
     const filters = {};
     if (locale) filters.locale = locale;
 
-    const [articles, totalItems] = await Promise.all([
-      this.db.find(this.collectionName, {
+    const [articles, totalItems] = await this.db.multi(
+      this.db.operations.findOperation(this.collectionName, {
         limit,
         offset,
         filters,
@@ -20,8 +20,22 @@ class ArticlesService {
           date: -1
         }
       }),
-      this.db.count(this.collectionName, { filters })
-    ]);
+      this.db.operations.countOperation(this.collectionName, {
+        filters,
+      })
+    );
+
+    // const [articles, totalItems] = await Promise.all([
+    //   this.db.find(this.collectionName, {
+    //     limit,
+    //     offset,
+    //     filters,
+    //     sort: {
+    //       date: -1
+    //     }
+    //   }),
+    //   this.db.count(this.collectionName, { filters })
+    // ]);
 
     return {
       articles: articles.map(article => new ArticleDTO(article)),
