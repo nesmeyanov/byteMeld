@@ -29,6 +29,12 @@
       },
       "api": {
         "bytemeldAPI": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3kgb55vr5tlzd",
+          "type": "manual"
+        }
       }
     }
   }
