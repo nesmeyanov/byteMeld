@@ -19,7 +19,7 @@ i18n
 	.use(Languagedetector)
 	.init({
 		resources,
-		lng: LOCALS.UA,
+		lng: LOCALS.EN,
 		interpolation: {
 			escapeValue: false,
 		},
