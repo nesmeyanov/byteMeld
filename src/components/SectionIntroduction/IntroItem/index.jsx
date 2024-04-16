@@ -1,15 +1,29 @@
-import style from "./introItem.module.scss"
+import style from "./introItem.module.scss";
 import { motion } from "framer-motion";
-import { charAnimation, wordAnimation, borderAnimation } from "../../../utils/animation/introAnimation";
+import {
+	charAnimation,
+	wordAnimation,
+	borderAnimation,
+} from "../../../utils/animation/introAnimation";
 import { useState } from "react";
 
-export function IntroItem({ isByte, word, char, index}) {
+export function IntroItem({ isByte, word, char, index }) {
 	const [isHovered, setIsHovered] = useState(false);
+
+	const handleTouchStart = () => {
+		setIsHovered(true);
+	};
+
+	const handleTouchEnd = () => {
+		setIsHovered(false);
+	};
 	return (
 		<>
 			<motion.li
 				onHoverStart={() => setIsHovered(true)}
 				onHoverEnd={() => setIsHovered(false)}
+				onTouchStart={handleTouchStart}
+				onTouchEnd={handleTouchEnd}
 				className={style.item_intro}
 				initial={isByte && !isHovered ? "hidden" : "visible"}
 				animate={isByte && !isHovered ? "visible" : "hidden"}
