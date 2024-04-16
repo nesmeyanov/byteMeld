@@ -185,6 +185,8 @@ export const en = {
 			details2: "Field is required",
 		},
 		tell: "Tell us about your project",
+		notif1: "Your request has been sent successfully!",
+		notif2: "Expect to hear from us soon.",
 	},
 
 	//***Footer***//

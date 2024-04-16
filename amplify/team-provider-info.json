@@ -15,12 +15,12 @@
       "function": {
         "bytemeldLambda": {
           "deploymentBucketName": "amplify-bytemeld-dev-235904-deployment",
-          "s3Key": "amplify-builds/bytemeldLambda-2b7070376d6b52555869-build.zip",
+          "s3Key": "amplify-builds/bytemeldLambda-693971396e6778636c4a-build.zip",
           "mailboxPassword": "{{resolve:secretsmanager:bytemeld/mailbox:SecretString:password}}"
         },
         "DatabaseLambda": {
           "deploymentBucketName": "amplify-bytemeld-dev-235904-deployment",
-          "s3Key": "amplify-builds/DatabaseLambda-5150614d736b2b39386e-build.zip",
+          "s3Key": "amplify-builds/DatabaseLambda-457a41756a6170574d47-build.zip",
           "dbHost": "{{resolve:secretsmanager:bytemeld/DocumentDB-creds:SecretString:host}}",
           "dbUsername": "{{resolve:secretsmanager:bytemeld/DocumentDB-creds:SecretString:username}}",
           "dbPassword": "{{resolve:secretsmanager:bytemeld/DocumentDB-creds:SecretString:password}}",

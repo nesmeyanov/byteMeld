@@ -14,6 +14,7 @@
 // module.exports = router;
 
 const ServiceClass = require('./service');
+const limiter = require('../middlewares/limiter');
 
 class ArticlesController {
   constructor(service) {
@@ -55,8 +56,8 @@ module.exports = function(router, dbService) {
   const service = new ServiceClass(dbService);
   const controller = new ArticlesController(service);
 
-  router.get('/:slug', controller.getOneArticle.bind(controller));
-  router.get('/', controller.getArticles.bind(controller));
+  router.get('/:slug', limiter, controller.getOneArticle.bind(controller));
+  router.get('/', limiter, controller.getArticles.bind(controller));
 
   return router;
 };
