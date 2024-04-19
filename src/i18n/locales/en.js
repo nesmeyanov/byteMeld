@@ -60,7 +60,7 @@ export const en = {
 	//*** SectionServices ***/
 	services: {
 		title1: "Outsourcing",
-		title2: "Outstaf",
+		title2: "Outstaff",
 		btn: "Start cooperation",
 		outsourcing: {
 			service1: {
@@ -148,7 +148,7 @@ export const en = {
 		title: "Let's cooperate",
 		typeServices: "Type of service",
 		outsourcing: "outsourcing",
-		outstaf: "outstaf",
+		outstaf: "outstaff",
 		servicesTitle: "Services",
 		budgetTitle: "Budget (USD)",
 		fullName: "Full name",
