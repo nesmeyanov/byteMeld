@@ -7,6 +7,7 @@ import { Error } from "../../Error";
 import { Loader } from "../../Loader";
 import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
+import { scrollUpPage } from "../../../utils/helpers";
 
 export default function PageBlog() {
 	const [pageCount, setPageCount] = useState(0);
@@ -31,6 +32,10 @@ export default function PageBlog() {
 		const newOffset = (event.selected * itemsPerPage) % totalArticles;
 		setItemOffset(newOffset);
 	};
+
+	useEffect(() => {
+		scrollUpPage();
+	}, []);
 
 	return (
 		<section className={`${style.wrapper} ${isError && style.error}`}>

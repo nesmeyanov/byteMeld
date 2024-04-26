@@ -37,8 +37,14 @@ export function BurgerMenu({ dataMenu, location, t, isMobil, isOpenBurgerMenu, t
 					className={style.btn_burgerLink}
 					{...(location.pathname !== "/" && { to: "/" })}
 					onClick={toggleBurgerMenu}
+					// data-id="#contacts"
 				>
-					<button className={style.btn_burger}>{t("header.btn")}</button>
+					<button
+						className={style.btn_burger}
+						data-id="#contacts"
+					>
+						{t("header.btn")}
+					</button>
 				</Link>
 			</div>
 		</motion.div>
