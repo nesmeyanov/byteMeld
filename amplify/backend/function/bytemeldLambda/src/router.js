@@ -1,10 +1,10 @@
 // const dbService = require('./database/db-service');
-const lambdaDB = require('./lambdaDB/service');
+import lambdaDB from './lambdaDB/service.js';
 
-const orders = require('./orders/controller');
-const articles = require('./articles/controller');
+import orders from './orders/controller.js';
+import articles from './articles/controller.js';
 
-module.exports = (app, router) => {
+export default (app, router) => {
   app.use('/orders', orders(router, lambdaDB));
 
   app.use('/articles', articles(router, lambdaDB));

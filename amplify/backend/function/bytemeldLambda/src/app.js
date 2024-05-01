@@ -9,16 +9,19 @@ or in the "license" file accompanying this file. This file is distributed on an 
 See the License for the specific language governing permissions and limitations under the License.
 */
 
-const express = require('express')
-const bodyParser = require('body-parser')
-const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
+import express from 'express';
+import helmet from 'helmet';
+import bodyParser from 'body-parser';
+import awsServerlessExpressMiddleware from 'aws-serverless-express/middleware.js';
+import createRoutes from './router.js';
 
 // declare a new express app
-const app = express()
+const app = express();
 const router = express.Router();
 
-app.use(bodyParser.json())
-app.use(awsServerlessExpressMiddleware.eventContext())
+app.use(bodyParser.json());
+app.use(helmet());
+app.use(awsServerlessExpressMiddleware.eventContext());
 
 // Enable CORS for all methods
 app.use(function(req, res, next) {
@@ -27,7 +30,7 @@ app.use(function(req, res, next) {
   next()
 });
 
-require('./router')(app, router);
+createRoutes(app, router);
 
 app.use((err, req, res, next) => {
   // Global error handler
@@ -44,4 +47,4 @@ app.listen(3000, function() {
 // Export the app object. When executing the application local this does nothing. However,
 // to port it to AWS Lambda we will create a wrapper around that will load the app from
 // this file
-module.exports = app
+export default app;

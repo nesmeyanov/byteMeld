@@ -10,7 +10,7 @@ class BlockDTO {
   image
 }
 
-class ArticleDTO {
+export class ArticleDTO {
   constructor (article) {
     this.date = article.date;
     this.locale = article.locale;
@@ -29,7 +29,3 @@ class ArticleDTO {
   id
   blocks
 }
-
-module.exports = {
-  ArticleDTO,
-};

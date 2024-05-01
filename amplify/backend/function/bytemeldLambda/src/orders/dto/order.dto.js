@@ -1,4 +1,4 @@
-class OrderDTO {
+export class OrderDTO {
   constructor (data) {
     this.typeService = data.typeService;
     this.fullName = data.fullName;
@@ -15,7 +15,3 @@ class OrderDTO {
   services
   budget
 }
-
-module.exports = {
-  OrderDTO,
-};

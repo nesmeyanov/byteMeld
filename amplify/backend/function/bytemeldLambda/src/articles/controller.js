@@ -13,8 +13,8 @@
 
 // module.exports = router;
 
-const ServiceClass = require('./service');
-const limiter = require('../middlewares/limiter');
+import ServiceClass from './service.js';
+import limiter from '../middlewares/limiter.js';
 
 class ArticlesController {
   constructor(service) {
@@ -52,7 +52,7 @@ class ArticlesController {
   }
 }
 
-module.exports = function(router, dbService) {
+export default function(router, dbService) {
   const service = new ServiceClass(dbService);
   const controller = new ArticlesController(service);
 

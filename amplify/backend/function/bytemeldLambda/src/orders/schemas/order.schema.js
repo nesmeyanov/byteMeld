@@ -1,4 +1,4 @@
-const Joi = require('joi');
+import Joi from 'joi';
 
 const schema = Joi.object({
   typeService: Joi.string().required(),
@@ -9,4 +9,4 @@ const schema = Joi.object({
   budget: Joi.string().required(),
 });
 
-module.exports = schema;
+export default schema;

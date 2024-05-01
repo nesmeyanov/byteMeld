@@ -1,4 +1,4 @@
-const { ArticleDTO } = require('./dto/article.dto');
+import { ArticleDTO } from './dto/article.dto.js';
 
 class ArticlesService {
   collectionName = 'articles';
@@ -54,4 +54,4 @@ class ArticlesService {
   }
 }
 
-module.exports = ArticlesService;
+export default ArticlesService;

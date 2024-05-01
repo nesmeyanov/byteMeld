@@ -1,5 +1,5 @@
-const { LambdaClient, InvokeCommand } = require('@aws-sdk/client-lambda');
-const operations = require('./operations');
+import { LambdaClient, InvokeCommand } from '@aws-sdk/client-lambda';
+import operations from './operations.js';
 
 const client = new LambdaClient({ region: process.env.REGION });
 
@@ -95,4 +95,4 @@ class DBLambda {
   }
 };
 
-module.exports = new DBLambda();
+export default new DBLambda();

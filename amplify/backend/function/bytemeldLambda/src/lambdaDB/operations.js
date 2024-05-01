@@ -50,4 +50,4 @@ class DBOperations {
   }
 };
 
-module.exports = new DBOperations();
+export default new DBOperations();

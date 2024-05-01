@@ -1,8 +1,8 @@
-const ServiceClass = require('./service');
-const mailer = require('../mailer');
-const Validation = require('../middlewares/validation');
-const limiter = require('../middlewares/limiter');
-const OrderSchema = require('./schemas/order.schema');
+import ServiceClass from './service.js';
+import mailer from '../mailer.js';
+import Validation from '../middlewares/validation.js';
+import limiter from '../middlewares/limiter.js';
+import OrderSchema from './schemas/order.schema.js';
 
 const validation = new Validation(OrderSchema);
 
@@ -27,7 +27,7 @@ class OrdersController {
   }
 }
 
-module.exports = function(router, dbService) {
+export default function(router, dbService) {
   const service = new ServiceClass(dbService, mailer);
   const controller = new OrdersController(service);
 

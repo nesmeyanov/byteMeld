@@ -1,11 +1,11 @@
-const DBConnection = require('./db-connection');
+import DBConnection from './db-connection.js';
 const connection = new DBConnection();
 const cl = connection.getDBClient();
 
 /**
  * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
  */
-exports.handler = async (event) => {
+export const handler = async (event) => {
     console.log(`EVENT: ${JSON.stringify(event)}`);
     const client = await cl;
     const db = client.db('bytemeld');

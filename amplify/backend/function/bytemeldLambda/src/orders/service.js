@@ -20,4 +20,4 @@ class OrdersService {
   }
 }
 
-module.exports = OrdersService;
+export default OrdersService;
