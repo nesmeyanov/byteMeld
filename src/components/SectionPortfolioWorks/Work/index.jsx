@@ -3,32 +3,27 @@ import { ArrowGreen } from "../../Icons";
 
 export function Work({ site, img, isMobil }) {
 	return (
-		<div className={style.wrapper}>
-			<a
-				href={site.url}
-				rel="noreferrer"
-				target="_blank"
-				className={style.image}
-			>
+		<a
+			href={site.url}
+			rel="noreferrer"
+			target="_blank"
+			className={style.wrapper}
+		>
+			<div className={style.image}>
 				<img
 					src={img}
 					alt={site.title}
 				/>
-			</a>
+			</div>
 			<h3 className={style.title}>{site.title}</h3>
 			<div className={style.info_box}>
 				<p className={style.desc}>{site.desc}</p>
 				{!isMobil && (
-					<a
-						href={site.url}
-						rel="noreferrer"
-						target="_blank"
-						className={style.link}
-					>
+					<div className={style.link}>
 						<ArrowGreen />
-					</a>
+					</div>
 				)}
 			</div>
-		</div>
+		</a>
 	);
 }
