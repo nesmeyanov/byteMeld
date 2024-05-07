@@ -5,5 +5,5 @@ export function Article() {
 		<div id="main">
 			<PageArticle />
 		</div>
-	)
+	);
 }

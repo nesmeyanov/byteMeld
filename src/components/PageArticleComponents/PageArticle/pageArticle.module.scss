@@ -5,6 +5,10 @@
 		url("../../../assets/images/bg/bg_noise.jpg") lightgray 50% / cover no-repeat;
 	display: flex;
 	justify-content: center;
+
+	&.load {
+		height: 100vh;
+	}
 }
 
 .container {
@@ -30,6 +34,11 @@
 	justify-content: center;
 	flex-direction: column;
 	gap: 20px;
+	opacity: 1;
+
+	&.loading {
+		opacity: 0;
+	}
 }
 
 .title_box {

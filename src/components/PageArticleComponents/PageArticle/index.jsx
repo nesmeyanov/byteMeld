@@ -22,11 +22,11 @@ export function PageArticle() {
 	}, []);
 
 	return (
-		<section className={style.wrapper}>
-			<div className={`${style.container} ${isError && style.error}`}>
+		<section className={`${style.wrapper} ${isLoading && style.load}`}>
+			<div className={`${style.container} ${isError && style.error} `}>
 				{isError && <Error />}
 				{isLoading && <Loader />}
-				<div className={style.article_body}>
+				<div className={`${style.article_body} ${isLoading && style.loading}`}>
 					<div className={style.title_box}>
 						<Link to="/blog">{t("blog.title")}</Link>
 						<span className={style.arrow}>

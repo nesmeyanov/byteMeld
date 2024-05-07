@@ -5,9 +5,9 @@ import { BlogItem } from "../BlogItem";
 import { useGetArticlesQuery } from "../../../store/bytemeld/bytemeld.api";
 import { Error } from "../../Error";
 import { Loader } from "../../Loader";
+import LazyLoad from "react-lazy-load";
 
-
-export default function SectionBlog() {
+export function SectionBlog() {
 	const { t, i18n } = useTranslation();
 	const { data, isError, isLoading } = useGetArticlesQuery({
 		limit: 2,
@@ -22,29 +22,31 @@ export default function SectionBlog() {
 			id="blog"
 			className={style.wrapperBlog}
 		>
-			<div className={style.container}>
-				<div className={style.header_box}>
-					<h2 className={style.title}>{t("blog.title")}</h2>
-					<Link
-						className={style.read}
-						to="/blog"
-					>
-						{" "}
-						{t("blog.read")}
-					</Link>
-				</div>
+			<LazyLoad className={style.lazy} offset={50}>
+				<div className={style.container}>
+					<div className={style.header_box}>
+						<h2 className={style.title}>{t("blog.title")}</h2>
+						<Link
+							className={style.read}
+							to="/blog"
+						>
+							{" "}
+							{t("blog.read")}
+						</Link>
+					</div>
 
-				{isError && <Error />}
-				<div className={style.blog_box}>
-					{isLoading && <Loader />}
-					{articles?.map((article) => (
-						<BlogItem
-							key={article.id}
-							{...article}
-						/>
-					))}
+					{isError && <Error />}
+					<div className={style.blog_box}>
+						{isLoading && <Loader />}
+						{articles?.map((article) => (
+							<BlogItem
+								key={article.id}
+								{...article}
+							/>
+						))}
+					</div>
 				</div>
-			</div>
+			</LazyLoad>
 		</section>
 	);
 }
