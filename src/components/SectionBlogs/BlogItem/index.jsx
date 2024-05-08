@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 
 export function BlogItem({ ...article }) {
 	return (
-		<div className={style.wrapper}>
+		<Link
+			to={`/blog/${article.slug}`}
+			className={style.wrapper}
+		>
 			<div className={style.image}>
 				<img
 					src={article.thumbnail}
@@ -16,14 +19,11 @@ export function BlogItem({ ...article }) {
 				<h3 className={style.title}>{article.title}</h3>
 				<div className={style.actions}>
 					<span className={style.date}>{formatDate(article.date)}</span>
-					<Link
-						to={`/blog/${article.slug}`}
-						className={style.link}
-					>
+					<span>
 						<ArrowGreen />
-					</Link>
+					</span>
 				</div>
 			</div>
-		</div>
+		</Link>
 	);
 }
