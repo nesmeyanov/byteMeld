@@ -2,8 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import { MainLayout, Home } from "../pages";
 import { createContext } from "react";
 import { useMediaQuery } from "react-responsive";
-import { Blog } from "../pages/Blog";
-import { Article } from "../pages/Article";
+// import { Blog } from "../pages/Blog";
+// import { Article } from "../pages/Article";
 export const BreakPoint = createContext();
 
 export default function Router() {
@@ -21,14 +21,14 @@ export default function Router() {
 						index
 						element={<Home />}
 					/>
-					<Route
+					{/* <Route
 						path="/blog"
 						element={<Blog />}
-					/>
-					<Route
+					/> */}
+					{/* <Route
 						path="/blog/:slug"
 						element={<Article />}
-					/>
+					/> */}
 				</Route>
 			</Routes>
 		</BreakPoint.Provider>

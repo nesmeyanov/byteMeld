@@ -22,10 +22,10 @@ export const en = {
 			// 	title: "Reviews",
 			// 	anchor: "#reviews",
 			// },
-			blog: {
-				title: "Blog",
-				anchor: "#blog",
-			},
+			// blog: {
+			// 	title: "Blog",
+			// 	anchor: "#blog",
+			// },
 			contacts: {
 				title: "Contacts",
 				anchor: "#contacts",
@@ -212,10 +212,10 @@ export const en = {
 			// 	title: "Reviews",
 			// 	anchor: "#reviews",
 			// },
-			blog: {
-				title: "Blog",
-				anchor: "#blog",
-			},
+			// blog: {
+			// 	title: "Blog",
+			// 	anchor: "#blog",
+			// },
 			contacts: {
 				title: "Contacts",
 				anchor: "#contacts",

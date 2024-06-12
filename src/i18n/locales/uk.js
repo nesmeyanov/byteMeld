@@ -22,10 +22,10 @@ export const uk = {
 			// 	title: "Відгуки",
 			// 	anchor: "#reviews",
 			// },
-			blog: {
-				title: "Блог",
-				anchor: "#blog",
-			},
+			// blog: {
+			// 	title: "Блог",
+			// 	anchor: "#blog",
+			// },
 			contacts: {
 				title: "Контакти",
 				anchor: "#contacts",
@@ -212,10 +212,10 @@ export const uk = {
 			// 	title: "Відгуки",
 			// 	anchor: "#reviews",
 			// },
-			blog: {
-				title: "Блог",
-				anchor: "#blog",
-			},
+			// blog: {
+			// 	title: "Блог",
+			// 	anchor: "#blog",
+			// },
 			contacts: {
 				title: "Контакти",
 				anchor: "#contacts",
